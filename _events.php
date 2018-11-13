@@ -52,7 +52,7 @@
 						
 						if ($dayStartDate == $dayEndDate) :
 						
-						echo 'Le ' . $dayStartFull .' à ' . $timeStartDate  ;
+						echo 'Le ' . $dayStartFull .' de ' . $timeStartDate . ' à ' .  $timeEndDate;
 						
 						elseif ($dayStartDate != $dayEndDate) :
 						
