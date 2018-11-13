@@ -1,17 +1,33 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<!-- section -->
-		<section>
+			<!-- SLIDER -->
+		<section id="slider" class="container-fluid">
 
-			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-
-			<?php get_template_part('loop'); ?>
-
-			<?php get_template_part('pagination'); ?>
-
+		<?php include("_slider.php"); ?>
+  		</section>
+		<!-- / SLIDER -->
+		
+		<!-- section news -->
+		<section class="container ct-news">
+		
+			<?php  include("_news.php"); ?>
+			
 		</section>
-		<!-- /section -->
+		<!-- /section news -->
+		
+		
+		<!-- section events -->
+		<section class="container ct-events">
+			<?php include("_events.php"); ?>
+		</section>
+		<!-- /section events -->
+		
+		<!-- section Galerie -->
+		<section class="container ct-galerie">
+		<?php include("_galerie.php"); ?>
+		</section>
+		<!-- /section galerie -->
 	</main>
 
 <?php get_sidebar(); ?>
