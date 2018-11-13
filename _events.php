@@ -20,23 +20,45 @@
 						</h3>
 						<!-- /post title -->
 
+
+
+
 						<p><?php
 						
 						
-						$dateStart = get_the_date_start();
-						$dateEnd = get_the_date_end();
-							
-							if($dateStart != "" && $dateEnd == "$dateStart") :
-							echo 'Le: ' . $dateStart ;
-							
-							 elseif ($dateStart != "" && $dateEnd != "$dateStart") :
-							
-							echo 'Du ' . $dateStart ;
-							echo ' au ' . $dateEnd;
-							
-							
-							endif;
-							
+						
+						// dans interface mettre la date au format U --> unix timestamp http://php.net/manual/fr/function.date.php 
+						
+						// format date Y m d h:i
+						
+					
+						
+						$originalStartDate = get_the_date_start();
+						$originalEndDate = get_the_date_end();
+
+						
+						$dayStartDate = date('d/m/Y', $originalStartDate);
+						$dayEndDate = date('d/m/Y', $originalEndDate);
+						
+						$timeStartDate = date('h:i', $originalStartDate);
+						$timeEndDate = date('h:i', $originalEndDate);
+
+						
+						
+						if ($dayStartDate == $dayEndDate) :
+						
+						echo 'Le ' . $dayStartDate .' à ' . $timeStartDate  ;
+						
+						elseif ($dayStartDate != $dayEndDate) :
+						
+						echo 'Du ' . $dayStartDate .' à '. $timeStartDate .' au '. $dayEndDate . ' à ' . $timeEndDate;
+						
+						endif;
+						
+						
+						// OK
+						//echo date('m/d/Y', $originalStartDate);
+		
 							
 							
 							?></p>
