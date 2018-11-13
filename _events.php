@@ -27,11 +27,14 @@
 						
 						
 						
-						// dans interface mettre la date au format U --> unix timestamp http://php.net/manual/fr/function.date.php 
+						// dans interface mettre la date au format U --> unix timestamp https://codex.wordpress.org/Formatting_Date_and_Time VS http://php.net/manual/fr/function.date.php 
 						
 						// format date Y m d h:i
 						
-					
+					   
+					   // pour passer les dates en FR puis utiliser strftime() plutôt que date
+					   setlocale(LC_TIME, "fr_FR");
+						
 						
 						$originalStartDate = get_the_date_start();
 						$originalEndDate = get_the_date_end();
@@ -40,29 +43,29 @@
 						$dayStartDate = date('d/m/Y', $originalStartDate);
 						$dayEndDate = date('d/m/Y', $originalEndDate);
 						
-						$timeStartDate = date('h:i', $originalStartDate);
-						$timeEndDate = date('h:i', $originalEndDate);
+						$timeStartDate = date('h \h i', $originalStartDate);
+						$timeEndDate = date('h \h i', $originalEndDate);
 
+						$dayStartFull = strftime('%A %d %B', $originalStartDate);
+						$dayEndFull = strftime('%A %d %B', $originalEndDate);
 						
 						
 						if ($dayStartDate == $dayEndDate) :
 						
-						echo 'Le ' . $dayStartDate .' à ' . $timeStartDate  ;
+						echo 'Le ' . $dayStartFull .' à ' . $timeStartDate  ;
 						
 						elseif ($dayStartDate != $dayEndDate) :
 						
-						echo 'Du ' . $dayStartDate .' à '. $timeStartDate .' au '. $dayEndDate . ' à ' . $timeEndDate;
+						echo 'Du ' . $dayStartFull .' à '. $timeStartDate .' au '. $dayEndFull . ' à ' . $timeEndDate;
 						
 						endif;
 						
-						
-						// OK
-						//echo date('m/d/Y', $originalStartDate);
+				
 		
 							
 							
 							?></p>
-						<p><?php 
+						<p><?php  
 							
 							/*if($dateEnd != $dateStart)
 							echo 'Au: ' . $dateEnd; */?></p>

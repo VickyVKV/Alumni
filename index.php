@@ -4,14 +4,14 @@
 			<!-- SLIDER -->
 		<section id="slider" class="container-fluid">
 
-		<?php include("_slider.php"); ?>
+		<?php //include("_slider.php"); ?>
   		</section>
 		<!-- / SLIDER -->
 		
 		<!-- section news -->
 		<section class="container ct-news">
 		
-			<?php  include("_news.php"); ?>
+			<?php  //include("_news.php"); ?>
 			
 		</section>
 		<!-- /section news -->
