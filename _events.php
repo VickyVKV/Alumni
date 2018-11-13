@@ -20,13 +20,30 @@
 						</h3>
 						<!-- /post title -->
 
-						<p><?php $dateStart = get_the_date_start();
-							if($dateStart != "")
-							echo 'Le: ' . $dateStart ?></p>
+						<p><?php
+						
+						
+						$dateStart = get_the_date_start();
+						$dateEnd = get_the_date_end();
+							
+							if($dateStart != "" && $dateEnd == "$dateStart") :
+							echo 'Le: ' . $dateStart ;
+							
+							 elseif ($dateStart != "" && $dateEnd != "$dateStart") :
+							
+							echo 'Du ' . $dateStart ;
+							echo ' au ' . $dateEnd;
+							
+							
+							endif;
+							
+							
+							
+							?></p>
 						<p><?php 
-							$dateEnd = get_the_date_end();
-							if($dateEnd != $dateStart)
-							echo 'Au: ' . $dateEnd; ?></p>
+							
+							/*if($dateEnd != $dateStart)
+							echo 'Au: ' . $dateEnd; */?></p>
 			
 
 						<?php edit_post_link(); ?>
