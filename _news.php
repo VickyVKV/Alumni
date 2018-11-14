@@ -15,7 +15,7 @@
 						<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 tri" data-filter="technique"><a>Technique</a></div>
 					</div>
 		<div class="row news">
-			<div class="col-12 text-center"><h2>Actualités</h2>
+			<div class="col-12"><h2>Actualités</h2>
 			</div>
 			
 			<?php query_posts('category_name=actualite');

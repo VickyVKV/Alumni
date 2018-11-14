@@ -27,7 +27,6 @@
 		</script>
 		<script src="wp-content/themes/alumni-ferrer-1/js/jquery.min.js"></script>
 		<script src="wp-content/themes/alumni-ferrer-1/js/bootstrap.min.js"></script>
-		<script src="wp-content/themes/alumni-ferrer-1/js/scripts.js"></script>
 
 	</body>
 </html>
