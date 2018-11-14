@@ -25,9 +25,9 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
+		<script src="wp-content/themes/alumni-ferrer-1/js/jquery.min.js"></script>
+		<script src="wp-content/themes/alumni-ferrer-1/js/bootstrap.min.js"></script>
+		<script src="wp-content/themes/alumni-ferrer-1/js/scripts.js"></script>
 
 	</body>
 </html>
