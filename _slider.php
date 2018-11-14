@@ -1,5 +1,5 @@
 
-			<div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">					
+<div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">					
  <?php 
    $number = 0;
 ?>
