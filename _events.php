@@ -20,13 +20,55 @@
 						</h3>
 						<!-- /post title -->
 
-						<p><?php $dateStart = get_the_date_start();
-							if($dateStart != "")
-							echo 'Le: ' . $dateStart ?></p>
-						<p><?php 
-							$dateEnd = get_the_date_end();
-							if($dateEnd != $dateStart)
-							echo 'Au: ' . $dateEnd; ?></p>
+
+
+
+						<p><?php
+						
+						
+						
+						// dans interface mettre la date au format U --> unix timestamp https://codex.wordpress.org/Formatting_Date_and_Time VS http://php.net/manual/fr/function.date.php 
+						
+						// format date Y m d h:i
+						
+					   
+					   // pour passer les dates en FR puis utiliser strftime() plutôt que date
+					   setlocale(LC_TIME, "fr_FR");
+						
+						
+						$originalStartDate = get_the_date_start();
+						$originalEndDate = get_the_date_end();
+
+						
+						$dayStartDate = date('d/m/Y', $originalStartDate);
+						$dayEndDate = date('d/m/Y', $originalEndDate);
+						
+						$timeStartDate = date('h \h i', $originalStartDate);
+						$timeEndDate = date('h \h i', $originalEndDate);
+
+						$dayStartFull = strftime('%A %d %B', $originalStartDate);
+						$dayEndFull = strftime('%A %d %B', $originalEndDate);
+						
+						
+						if ($dayStartDate == $dayEndDate) :
+						
+						echo 'Le ' . $dayStartFull .' de ' . $timeStartDate . ' à ' .  $timeEndDate;
+						
+						elseif ($dayStartDate != $dayEndDate) :
+						
+						echo 'Du ' . $dayStartFull .' à '. $timeStartDate .' au '. $dayEndFull . ' à ' . $timeEndDate;
+						
+						endif;
+						
+				
+		
+							
+							
+							?></p>
+						<p><?php  
+							
+							/*if($dateEnd != $dateStart)
+							echo 'Au: ' . $dateEnd; */?></p>
 			
 
 						<?php edit_post_link(); ?>
