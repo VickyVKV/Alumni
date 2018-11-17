@@ -1,33 +1,35 @@
 <?php get_header(); ?>
 
 	<main role="main">
-			<!-- SLIDER -->
-		<section id="slider" class="container-fluid">
-
-		<?php include("_slider.php"); ?>
-  		</section>
-		<!-- / SLIDER -->
-		
-		<div class="row filter">
-			<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="article"><a>Tout</a></div>
-			<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
-			<div id="eco" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
-			<div id="para" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
-			<div  id="peda" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
-			<div id="social" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="social-cooremans"><a>Social</a></div>
-			<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="technique"><a>Technique</a></div>
+		<div class="container-fluid img-top-actu">
+			<div class="row">
+				<div class="col-12 img-titre-actu">
+					<h1>Actualités</h1>
+				</div>
+			</div>
 		</div>
 		
 		<!-- section news -->
 		<section class="container ct-news">
-		
-		<div class="row news">
+			
+			<div class="row">
 			<div class="col-12 my-5"><h2>Actualités</h2>
+			</div></div>
+				
+			<div class="row filter">
+				<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="article"><a>Tout</a></div>
+				<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
+				<div id="eco" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
+				<div id="para" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
+				<div  id="peda" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
+				<div id="social" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="social-cooremans"><a>Social</a></div>
+				<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="technique"><a>Technique</a></div>
 			</div>
 			
+			<div class="row news">
 			<?php query_posts('category_name=actualite');
 					 while ( have_posts() ) : the_post(); ?>
-				<div class="actu article col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+				<div class="actu2 article col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -48,7 +50,7 @@
 						
 					<!-- post title -->
 					<h3>
-						<a class="titre-actu" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+						<a class="titre-actu2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h3>
 					<!-- /post title -->
 
@@ -74,19 +76,6 @@
 			
 		</section>
 		<!-- /section news -->
-		
-		
-		<!-- section events -->
-		<section class="container ct-events">
-			<?php include("_events.php"); ?>
-		</section>
-		<!-- /section events -->
-		
-		<!-- section Galerie -->
-		<section class="container ct-galerie">
-		<?php include("_galerie.php"); ?>
-		</section>
-		<!-- /section galerie -->
 	</main>
 
 <?php get_sidebar(); ?>

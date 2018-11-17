@@ -1,19 +1,3 @@
-<?php 
- //header("Access-Control-Allow-Origin: *");
-//echo "coucou";
-
-
-?>
-
-<div class="row filter">
-						<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="article"><a>Tout</a></div>
-						<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
-						<div id="eco" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
-						<div id="para" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
-						<div  id="peda" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
-						<div id="social" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="social-cooremans"><a>Social</a></div>
-						<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="technique"><a>Technique</a></div>
-					</div>
 		<div class="row news">
 			<div class="col-12 my-5"><h2>Actualités</h2>
 			</div>
@@ -47,7 +31,7 @@
 
 					<!-- post details -->
 					<span class="date">Publié le <?php the_date(); ?> <?php the_time('g:i a'); ?></span>
-					<!--<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>-->
+					<!--<span class="author"><?php _e( 'Published by', 'html5blank' ); ?><?php the_author_posts_link(); ?></span>-->
 					<!--<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>-->
 					<!-- /post details -->
 
