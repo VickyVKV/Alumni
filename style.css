@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 	Theme Name: Alumni Ferrer 1
 	Theme URI: http://html5blank.com
@@ -6325,7 +6326,60 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 /* DANIEL */
-body {
+/* Catégories */
+.hashtags {
+  color: white;
+  width: 200px;
+  text-align: center;
+  float: right;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 0 20px 20px;
+  text-transform: uppercase; }
+
+.hashtags.paramedical {
+  background-color: red; }
+
+.hashtags.arts-appliques {
   background-color: green; }
+
+.hashtags.economique-cooremans {
+  background-color: orange; }
+
+.hashtags.pedagogique-bulls {
+  background-color: deepskyblue; }
+
+.hashtags.technique {
+  background-color: purple; }
+
+.hashtags.paramedical {
+  background-color: red; }
+
+.hashtags.social-cooremans {
+  background-color: yellow;
+  color: black; }
+
+/* /catégories */
+/* Titre actulaité */
+.titre-actu {
+  color: black; }
+
+/* /Titre actualité */
+.news-content p {
+  margin-top: 20px; }
+
+.actu:nth-child(odd) {
+  position: relative;
+  left: 50%; }
+
+@media (min-width: 1px) {
+  .actu:nth-child(odd) {
+    left: 0;
+    margin-left: 0; } }
+
+@media (min-width: 768px) {
+  .actu:nth-child(odd) {
+    left: 50%;
+    margin-left: 1px; } }
 
 /* /DANIEL */

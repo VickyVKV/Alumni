@@ -1,7 +1,75 @@
 /* DANIEL */
+/* Catégories */
+.hashtags {
+color:white;
+width:200px;
+text-align: center;
+float:right;
+border-radius: 20px;
+padding : 20px;
+margin: 0 0 20px 20px;
+text-transform: uppercase;
+}
+.hashtags.paramedical {
+background-color:red;
+}
+.hashtags.arts-appliques {
+background-color:green;
+}
+.hashtags.economique-cooremans {
+background-color:orange;
+}
+.hashtags.pedagogique-bulls {
+background-color:deepskyblue;
+}
+.hashtags.technique {
+background-color:purple;
+}
+.hashtags.paramedical {
+background-color:red;
+}
+.hashtags.social-cooremans {
+background-color:yellow;
+color:black;
+}
+/* /catégories */
 
-body {
-	background-color:green;
+/* Titre actulaité */
+.titre-actu {
+color:black;
+}
+/* /Titre actualité */
+
+.news-content p{
+margin-top:20px;
+}
+.actu:nth-child(odd) {
+position: relative;
+left:50%;
+}
+.actu {
+
 }
 
+@media (min-width:1px){
+.actu:nth-child(odd){
+left:0;
+margin-left:0;
+}		
+}
+@media (min-width:576px){
+
+}
+@media (min-width:768px){
+.actu:nth-child(odd) {
+left:50%;
+margin-left:1px;
+}
+}
+@media (min-width:992px){
+	
+}
+@media (min-width:1200px){
+	
+}
 /* /DANIEL */
