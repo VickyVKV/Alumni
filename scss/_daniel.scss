@@ -36,7 +36,7 @@ color:black;
 /* /catégories */
 
 /* Titre actulaité */
-.titre-actu {
+.titre-actu, .titre-actu2{
 color:black;
 }
 /* /Titre actualité */
@@ -77,6 +77,14 @@ font-size: 125px;
 margin-right:20px;
 }
 /* /PAGE EVENTS */
+
+/* FOOTER */
+footer {
+background-color:dimgray;
+color:white;
+padding: 20px 0 0 0;
+}
+/* /FOOTER */
 @media (min-width:1px){
 .actu:nth-child(odd){
 left:0;

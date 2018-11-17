@@ -89,6 +89,4 @@
 		<!-- /section galerie -->
 	</main>
 
-<?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
