@@ -38,7 +38,7 @@
 			<h2 class="my-5">Plus d'actualités</h2>
 			<?php query_posts('category_name=actualite');
 					 while ( have_posts() ) : the_post(); ?>
-				<div class="actu articledetactu col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+				<div class="actu-detail col-12 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					

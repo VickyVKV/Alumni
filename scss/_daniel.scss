@@ -90,6 +90,9 @@ border-radius: 20px;
 padding:20px;
 font-size: 25px;
 }
+.actu-detail {
+
+}
 /* /PAGE DETAIL EVENTS*/
 
 /* FOOTER */
@@ -107,7 +110,15 @@ margin-left:0;
 .actu2:nth-child(even){
 left:0;
 margin-left:0;
-}	
+}
+.logo-footer {
+height: 50px;
+width: 50px;
+border-radius:50%;
+}
+.logo-partner {
+height:50px;	
+}
 }
 @media (min-width:576px){
 

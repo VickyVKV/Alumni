@@ -7,12 +7,16 @@
 						<h4>Contact</h4>
 						<p>Lorme ipsum dolor sit amet, consectuteaur adispisching elit send in porta ligula.</p>
 					</div>
-					<div class="col-sm-4">
-						<h4 class="text-center">Suivez-nous</h4>
+					<div class="col-sm-4 text-center">
+						<h4>Suivez-nous</h4>
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
 					</div>
-					<div class="col-sm-4">
-						<h4 class="text-right">Partenaires</h4>
-						
+					<div class="col-sm-4 text-right">
+						<h4>Partenaires</h4>
+						<img class="logo-partner" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
 					</div>
 					<div class="col-12 text-center">
 						<!-- copyright -->
