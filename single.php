@@ -26,7 +26,7 @@
 			</div>
 				
 			<div class="col-sm-5">
-			<div class="info-prat-actu">
+			<div class="info-prat-actu <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 			
 			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span><br>
 			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
@@ -36,7 +36,7 @@
 				
 			<div>
 			<h2 class="my-5">Plus d'actualités</h2>
-			<?php query_posts('category_name=actualite');
+			<?php query_posts('category_name=actualite&posts_per_page=1');
 					 while ( have_posts() ) : the_post(); ?>
 				<div class="actu-detail col-12 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 				<!-- article -->
@@ -71,7 +71,6 @@
 
 					<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 
-					<?php //edit_post_link(); ?>
 					</div><!--  news-content -->
 				</article>
 				</div>
@@ -106,3 +105,13 @@
 	</main>
 
 <?php get_footer(); ?>
+
+<?php $catquery = new WP_Query( 'cat=12&posts_per_page=50' ); ?>
+<ul>
+ 
+<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+ 
+<li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></li>
+<?php endwhile;
+    wp_reset_postdata();
+?>
