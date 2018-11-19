@@ -6389,24 +6389,24 @@ a.text-dark:hover, a.text-dark:focus {
 .hovereffect:hover .overlay.technique {
   background-color: #5D0749; }
 
-.color {
+.color-galerie {
   width: 100%;
   height: 100%;
   opacity: 0.4;
   position: absolute;
   top: 0;
   left: 0; }
-  .color.arts-appliques {
+  .color-galerie.arts-appliques {
     background-color: #76B729; }
-  .color.economique-cooremans {
+  .color-galerie.economique-cooremans {
     background-color: #F49800; }
-  .color.paramedical {
+  .color-galerie.paramedical {
     background-color: #D21D10; }
-  .color.pedagogique-bulls {
+  .color-galerie.pedagogique-bulls {
     background-color: #1B97CE; }
-  .color.social-cooremans {
+  .color-galerie.social-cooremans {
     background-color: #F0E51A; }
-  .color.technique {
+  .color-galerie.technique {
     background-color: #5D0749; }
 
 .hovereffect {

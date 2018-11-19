@@ -39,7 +39,7 @@
 						</a>
 					<?php endif; ?>
 					<!-- /post thumbnail -->
-					<div class="color  <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>"></div>
+					<div class="color-galerie  <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>"></div>
 					<!-- post title -->
 					<div class="overlay <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 					<h3>
