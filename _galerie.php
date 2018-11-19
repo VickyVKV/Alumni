@@ -11,12 +11,11 @@
 
 					<!-- post thumbnail -->
 					<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<?php the_post_thumbnail(array(150,150)); // Declare pixel size you need inside the array ?>
 						</a>
 					<?php endif; ?>
 					<!-- /post thumbnail -->
-
+					<div class="color  <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>"></div>
 					<!-- post title -->
 					<div class="overlay <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 					<h3>

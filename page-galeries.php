@@ -31,7 +31,7 @@
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="hovereffect">
-
+				
 					<!-- post thumbnail -->
 					<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -39,7 +39,7 @@
 						</a>
 					<?php endif; ?>
 					<!-- /post thumbnail -->
-
+					<div class="color  <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>"></div>
 					<!-- post title -->
 					<div class="overlay <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 					<h3>
@@ -61,8 +61,6 @@
         </div>
     </div>
 </div>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
 
