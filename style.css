@@ -6351,3 +6351,102 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel-caption h5 {
   font-size: 30px; }
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: beige;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto; }
+
+.filter {
+  width: 100vw; }
+
+.row {
+  margin-left: auto;
+  margin-right: auto; }
+
+.fond {
+  padding-left: 13%; }
+
+.article {
+  margin-top: 50px;
+  height: 350px; }
+
+.article img {
+  width: 300px; }
+
+/*.color{
+    position: relative;
+    left: 150px;
+    top: -150px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    z-index: -1;
+    border-radius: 20px;
+}*/
+.ct-events .arts-appliques .color {
+  position: relative;
+  left: 150px;
+  top: -150px;
+  width: 200px;
+  height: 200px;
+  background-color: #76B729;
+  z-index: -1;
+  border-radius: 20px; }
+
+.ct-events .paramedical .color {
+  position: relative;
+  left: 150px;
+  top: -150px;
+  width: 200px;
+  height: 200px;
+  background-color: #D21D10;
+  z-index: -1;
+  border-radius: 20px; }
+
+.ct-events .economique-cooremans .color {
+  position: relative;
+  left: 150px;
+  top: -150px;
+  width: 200px;
+  height: 200px;
+  background-color: #F49800;
+  z-index: -1;
+  border-radius: 20px; }
+
+.ct-events .technique .color {
+  position: relative;
+  left: 150px;
+  top: -150px;
+  width: 200px;
+  height: 200px;
+  background-color: #5D0749;
+  z-index: -1;
+  border-radius: 20px; }
+
+.ct-events .pedagogique-bulls .color {
+  position: relative;
+  left: 150px;
+  top: -150px;
+  width: 200px;
+  height: 200px;
+  background-color: #1B97CE;
+  z-index: -1;
+  border-radius: 20px; }
+
+.ct-events .social-cooremans .color {
+  position: relative;
+  left: 150px;
+  top: -150px;
+  width: 200px;
+  height: 200px;
+  background-color: #F0E51A;
+  z-index: -1;
+  border-radius: 20px; }
