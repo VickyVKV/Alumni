@@ -80,12 +80,13 @@ function html5blank_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)
 	);
 }
+
 
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()

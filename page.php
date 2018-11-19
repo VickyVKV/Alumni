@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+
+
+<div class="container">
 	<main role="main">
 		<!-- section -->
 		<section>
@@ -39,7 +42,10 @@
 		</section>
 		<!-- /section -->
 	</main>
+	
+	</div>
 
 <?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>
