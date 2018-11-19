@@ -43,12 +43,13 @@ $('.button, .button2').css("cursor","pointer");
 			$(".ct-galerie .article").slice(0, 6).fadeIn("1000");
 		}
 		else{
-			$(".article").not("."+value).hide();
+			/*$(".article").not("."+value).hide();*/
+			$(".article").hide();
 			//$(".article").fadeOut("5000");
 			
-			//$(".ct-news .article:lt(4), .ct-events .article:lt(4), .ct-galerie .article:lt(4)").filter("."+value).fadeIn("5000");
-			//$(".ct-news .article, .ct-events .article, .ct-galerie .article").filter("."+value).slice(4, 100).fadeOut().slice(0, 3).fadeIn();
-			//$(".ct-news .article, .ct-events .article, .ct-galerie .article").filter("."+value).slice(4, 100).hide();
+			$(".ct-news .article:lt(4), .ct-events .article:lt(4), .ct-galerie .article:lt(4)").filter("."+value).fadeIn("5000");
+			$(".ct-news .article, .ct-events .article, .ct-galerie .article").filter("."+value).slice(4, 100).fadeOut().slice(0, 3).fadeIn();
+			$(".ct-news .article, .ct-events .article, .ct-galerie .article").filter("."+value).slice(4, 100).hide();
 			
 			//$(this).filter("."+value).addClass("active");
 			
@@ -107,25 +108,48 @@ $('.button, .button2').css("cursor","pointer");
 		
 		
 
-$( ".article" ).mouseenter(function() {
- $( this ).animate( {
-  top: "-=10px"
-  
-  } );
+
+
+//$('.ct-news').load("http://alumni.techniques-graphiques.be/wp-content/themes/Alumni-Ferrer/_news.php");
+
+$("#tech").click(function(){
+	$(".actualite").removeClass("odd");
+	$(".odd-technique:odd").addClass("odd");	
+	$(".hashtags.technique").removeClass("odd");
+});	
+$("#para").click(function(){
+	$(".actualite").removeClass("odd");
+	$(".odd-paramedical:odd").addClass("odd");	
+	$(".hashtags.paramedical").removeClass("odd");
 });
+$("#social").click(function(){
+	$(".actualite").removeClass("odd");
+	$(".odd-social-cooremans:odd").addClass("odd");	
+	$(".hashtags.social-cooremans").removeClass("odd");
+});	
+$("#peda").click(function(){
+	$(".actualite").removeClass("odd");
+	$(".odd-pedagogique-bulls:odd").addClass("odd");	
+	$(".hashtags.pedagogique-bulls").removeClass("odd");
+});	
+$("#eco").click(function(){
+	$(".actualite").removeClass("odd");
+	$(".odd-economique-cooremans:odd").addClass("odd");	
+	$(".hashtags.economique-cooremans").removeClass("odd");
+});	
+$("#art").click(function(){
+	$(".actualite").removeClass("odd");
+	$(".odd-arts-appliques:odd").addClass("odd");	
+	$(".hashtags.arts-appliques").removeClass("odd");
+});	
+$("#accueil").click(function(){
+	$(".actualite").removeClass("odd");
+	$(".odd-actualite:odd").addClass("odd");	
+	$(".hashtags.technique").removeClass("odd");
+});	
+	$(".actualite").removeClass("odd");
+	$(".odd-actualite:odd").addClass("odd");	
+	$(".hashtags.technique").removeClass("odd");	
 
-$( ".article" ).mouseleave(function() {
- $( this ).animate( {
-  top: "+=10px"
-  
-  } );
 });
-
-//$('.ct-news').load("http://alumni.techniques-graphiques.be/wp-content/themes/Alumni-Ferrer/_news.php");		
-		
-	
-});
-
-
-
 
