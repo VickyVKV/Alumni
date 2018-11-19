@@ -1,17 +1,24 @@
 <?php get_header(); ?>
-<div class="masthead">
-</div>
 
 	<main role="main">
 		<!-- section -->
-		<section>
-
-			<h1><?php the_title(); ?></h1>
+		<div class="container-fluid img-top-event">
+			<div class="row">
+				<div class="col-12 img-titre-event">
+					<h1>Evénements</h1>
+				</div>
+			</div>
+		</div>
+		<!-- /section --> 
             
-            
-            
-            
-           <div class="row filter">
+            <section class="container ct-events">
+                
+                <div class="row">
+			<div class="col-12 my-5"><h2>Evenements</h2>
+			</div></div>
+                
+                
+                           <div class="row filter">
 						<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 tri" data-filter="article"><a>Tout</a></div>
 						<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 tri" data-filter="arts-appliques"><a>Arts appliqués</a></div>
 						<div id="eco" class="button col-12 col-md-2 mt-md-0 mt-2 tri" data-filter="economique-cooremans"><a>Economie</a></div>
@@ -20,16 +27,17 @@
 						<div id="social" class="button col-12 col-md-1 mt-md-0 mt-2 tri" data-filter="social-cooremans"><a>Social</a></div>
 						<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 tri" data-filter="technique"><a>Technique</a></div>
             </div>
-            
-           		</section>
-		<!-- /section --> 
-            
-            <section class="container ct-events">
-			<div class="fond row">
+                
+                
+			<div class="row justify-content-center">
 				<?php query_posts('category_name=evenement');
 					 while ( have_posts() ) : the_post(); ?>
-					<div class="article col-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+					<div class="article col-10 col-lg-5 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 					<!-- article -->
+                        
+                        
+                        <div class="color">
+                        </div>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 						<!-- post thumbnail -->
@@ -40,8 +48,8 @@
 						<?php endif; ?>
 						<!-- /post thumbnail -->
 						
-				    <div class="color">
-                        </div>
+
+				    
 					</article>
                  
 					</div>

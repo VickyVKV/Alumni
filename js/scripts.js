@@ -107,19 +107,6 @@ $('.button, .button2').css("cursor","pointer");
 		
 		
 
-$( ".article" ).mouseenter(function() {
- $( this ).animate( {
-  top: "-=10px"
-  
-  } );
-});
-
-$( ".article" ).mouseleave(function() {
- $( this ).animate( {
-  top: "+=10px"
-  
-  } );
-});
 
 //$('.ct-news').load("http://alumni.techniques-graphiques.be/wp-content/themes/Alumni-Ferrer/_news.php");		
 		

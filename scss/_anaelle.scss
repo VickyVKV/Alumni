@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+@import "colors";
+
 .container-fluid{
 	padding: 0;
 }
@@ -31,36 +33,30 @@
    // position: fixed;
     //height: 100px;
 }
-.masthead{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background: beige;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	margin-left: auto;
-	margin-right: auto;
+.img-top-event{
+    background:	url(http://localhost/alumni/wp-content/uploads/2018/11/audience-auditorium-bible-301988.jpg);
+background-size: cover;
+height:100vh;
+}
+.img-titre-event h1{
+    color: white;
+position: relative;
+top:150%;
+float:right;
+font-size: 125px;
+margin-right:20px;
 }
 .filter{
     width: 100vw;
 }
-.row{
-    margin-left: auto;
-    margin-right: auto;
-}
-.fond{
-    //background-color: lightgrey;
-    padding-left: 13%;
-}
 .article{
     margin-top: 50px;
-    height: 350px;
+    //position: relative;
+    
 }
 .article img{
-    width: 300px;
-
+    min-height: 30vh;
+    position: relative;
 }
 
 /*.color{
@@ -73,63 +69,73 @@
     z-index: -1;
     border-radius: 20px;
 }*/
+.color2:hover{
+    opacity: 0.4;
+}
+.color2{
+	width:30vh;
+	height: 100%;
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:1;
+	&.arts-appliques {
+    background-color: $art;
+  }
+  &.economique-cooremans {
+    background-color: $eco;
+  }
+  &.paramedical {
+    background-color: $para;
+  }
+  &.pedagogique-bulls {
+    background-color: $peda;
+  }
+  &.social-cooremans {
+    background-color: $soci;
+  }
+  &.technique {
+    background-color: $tech ;
+}
+}
+
+/*h3{
+    position:absolute;
+    bottom:45%;
+    left:1;
+}*/
+
+.color{
+    position: absolute;
+    top: 75%;
+    right: 32%;
+    border-radius: 10px;
+    min-height: 10vh;
+    min-width: 25vh;
+}
 .ct-events .arts-appliques  .color {
-    position: relative;
-    left: 150px;
-    top: -150px;
-    width: 200px;
-    height: 200px;
     background-color: #76B729;
-    z-index: -1;
-    border-radius: 20px;
 }
 .ct-events .paramedical .color { 
-    position: relative;
-    left: 150px;
-    top: -150px;
-    width: 200px;
-    height: 200px;
     background-color: #D21D10;
-    z-index: -1;
-    border-radius: 20px;
 }
 .ct-events .economique-cooremans .color{
-    position: relative;
-    left: 150px;
-    top: -150px;
-    width: 200px;
-    height: 200px;
+
     background-color: #F49800;
-    z-index: -1;
-    border-radius: 20px;
+
 }
 .ct-events .technique .color{
-    position: relative;
-    left: 150px;
-    top: -150px;
-    width: 200px;
-    height: 200px;
+
     background-color: #5D0749;
-    z-index: -1;
-    border-radius: 20px;
+
 }
 .ct-events .pedagogique-bulls .color{
-    position: relative;
-    left: 150px;
-    top: -150px;
-    width: 200px;
-    height: 200px;
+
     background-color: #1B97CE;
-    z-index: -1;
-    border-radius: 20px;
+
 }
 .ct-events .social-cooremans .color{
-    position: relative;
-    left: 150px;
-    top: -150px;
-    width: 200px;
-    height: 200px;
+ 
     background-color: #F0E51A;
-    z-index: -1;
-    border-radius: 20px;
+ 
 }
