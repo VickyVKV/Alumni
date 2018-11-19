@@ -6359,6 +6359,18 @@ a.text-dark:hover, a.text-dark:focus {
 #tech {
   background-color: #5D0749; }
 
+.img-top-galerie {
+  background: url(http://localhost/alumni_groupe/wp-content/uploads/2018/11/camera-macro-optics-122400.jpg);
+  background-size: cover;
+  height: 600px; }
+
+.img-titre-galerie h1 {
+  position: relative;
+  top: 150%;
+  float: right;
+  font-size: 125px;
+  margin-right: 20px; }
+
 .hovereffect:hover .overlay.arts-appliques {
   background-color: #76B729; }
 
@@ -6377,11 +6389,8 @@ a.text-dark:hover, a.text-dark:focus {
 .hovereffect:hover .overlay.technique {
   background-color: #5D0749; }
 
-article img {
-  color: aqua; }
-
 .hovereffect {
-  width: 100%;
+  width: 200px;
   height: 100%;
   float: left;
   overflow: hidden;
@@ -6398,6 +6407,7 @@ article img {
   top: 0;
   left: 0;
   opacity: 0;
+  color: rgba(214, 31, 34, 0.5);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
 

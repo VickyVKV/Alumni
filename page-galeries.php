@@ -1,8 +1,18 @@
 <?php get_header(); ?>
 
 	<main role="main">
+		<div class="container-fluid img-top-galerie">
+			<div class="row">
+				<div class="col-12 img-titre-galerie">
+					<h1>Galeries</h1>
+				</div>
+			</div>
+		</div>
+	<div class="col-12 img-titre-galerie">
 	<h2 class="col-12"> Galeries</h2>
-<div class="row filter">
+
+		<section class="container ct-galerie">
+			<div class="row filter">
 						<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 tri" data-filter="article"><a>Tout</a></div>
 						<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 tri" data-filter="arts-appliques"><a>Arts appliqués</a></div>
 						<div id="eco" class="button col-12 col-md-2 mt-md-0 mt-2 tri" data-filter="economique-cooremans"><a>Economie</a></div>
@@ -12,8 +22,9 @@
 						<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 tri" data-filter="technique"><a>Technique</a></div>
 					</div>
 					<br>
-		<section class="container ct-galerie">
 			<div class="row">
+			
+					
 			<?php query_posts('category_name=galerie');
 					 while ( have_posts() ) : the_post(); ?>
 				<div class="article col-lg-3 col-md-6 col-sm-12 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
@@ -39,6 +50,7 @@
 
 				</article>
 				</div>
+				
 				<!-- /article -->
 
 			  <?php endwhile;

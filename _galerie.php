@@ -1,7 +1,9 @@
 <div class="row">
-			<h2 class="col-12"> Galerie</h2>
-			<?php query_posts('category_name=galerie');
-					 while ( have_posts() ) : the_post(4); ?>
+			<h2 class="col-12 "> Galerie</h2>
+			<?php $my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 4, 'category_name' => 'galerie'));?>
+              
+               <!--Pour ne garder que les evenements, il faut aussi modifier la boucle en faisant appel à la variable créée juste avant-->
+               <?php if ($my_posts->have_posts()) : while ($my_posts->have_posts() ) : $my_posts->the_post(); ?>
 				<div class="article col-lg-3 col-md-6 col-sm-12 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -27,8 +29,9 @@
 				</div>
 				<!-- /article -->
 
-			  <?php endwhile;
-	wp_reset_query();?>
+			  <?php endwhile; else: ?>
+					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+				<?php endif; ?><!--Fin du loop pour les posts-->
 
 			<?php //get_template_part('pagination'); ?>
 			</div> <!-- Row news -->
