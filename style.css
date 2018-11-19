@@ -6336,6 +6336,9 @@ a.text-dark:hover, a.text-dark:focus {
 .filter div {
   width: 75%; }
 
+.filter #accueil {
+  color: black !important; }
+
 #art {
   background-color: #76B729; }
 
@@ -6374,8 +6377,8 @@ a.text-dark:hover, a.text-dark:focus {
 .hovereffect:hover .overlay.technique {
   background-color: #5D0749; }
 
-.hovereffect .overlay {
-  color: rgba(230, 126, 128, 0.5); }
+article img {
+  color: aqua; }
 
 .hovereffect {
   width: 100%;
@@ -6384,7 +6387,8 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default; }
+  cursor: default;
+  margin: 10px 0; }
 
 .hovereffect .overlay {
   width: 100%;

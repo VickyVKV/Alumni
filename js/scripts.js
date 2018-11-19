@@ -121,11 +121,7 @@ $( ".article" ).mouseleave(function() {
   } );
 });
 
-//$('.ct-news').load("http://alumni.techniques-graphiques.be/wp-content/themes/Alumni-Ferrer/_news.php");		
-		
 	
+//$('.ct-news').load("http://alumni.techniques-graphiques.be/wp-content/themes/Alumni-Ferrer/_news.php");	
 });
-
-
-
 

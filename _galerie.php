@@ -1,7 +1,7 @@
 <div class="row">
 			<h2 class="col-12"> Galerie</h2>
 			<?php query_posts('category_name=galerie');
-					 while ( have_posts() ) : the_post(); ?>
+					 while ( have_posts() ) : the_post(4); ?>
 				<div class="article col-lg-3 col-md-6 col-sm-12 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

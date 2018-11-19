@@ -14,6 +14,10 @@
 		width:75%;
 	}
 }
+
+.filter #accueil{
+	color : black!important;
+}
 #art{
 	background-color: $art;
 }
@@ -41,7 +45,7 @@
 }
 
 
-///////////////////////////////////////VICKY/////////////////////////////////////////////////
+///////////////////////////////////////GALERIE/////////////////////////////////////////////////
 
 .hovereffect:hover .overlay{
   &.arts-appliques {
@@ -64,10 +68,8 @@
   }
 }
 
-
-
-.hovereffect .overlay{
-color : rgba(230,126,128,0.50);
+article img{
+	color:aqua;
 }
 
 .hovereffect {
@@ -78,6 +80,7 @@ overflow:hidden;
 position:relative;
 text-align:center;
 cursor:default;
+margin: 10px 0;
 }
 
 .hovereffect .overlay {
@@ -156,3 +159,5 @@ transform:translatey(0);
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
