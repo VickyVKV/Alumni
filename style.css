@@ -61,16 +61,24 @@ body {
 .news-content p {
   margin-top: 20px; }
 
-.actu:nth-child(odd) {
+/*.actu:nth-child(odd) {
+position: relative;
+left:50%;
+}*/
+.odd {
+  margin-left: 1px;
   position: relative;
   left: 50%; }
 
 /* /INDEX */
 /* PAGE EVENTS */
-.actu2:nth-child(even) {
-  position: relative;
-  left: 50%; }
+/*.actu2:nth-child(even) {
+position: relative;
+left:50%;
+}
+.actu2 {
 
+}*/
 .img-top-actu {
   background: url(http://localhost/alumni/wp-content/uploads/2018/10/nature3.jpg);
   background-size: cover;
@@ -133,12 +141,14 @@ footer {
 
 /* /FOOTER */
 @media (min-width: 1px) {
-  .actu:nth-child(odd) {
-    left: 0;
-    margin-left: 0; }
-  .actu2:nth-child(even) {
-    left: 0;
-    margin-left: 0; }
+  /*.actu:nth-child(odd){
+left:0;
+margin-left:0;
+}
+.actu2:nth-child(even){
+left:0;
+margin-left:0;
+}*/
   .logo-footer {
     height: 50px;
     width: 50px;
@@ -147,12 +157,14 @@ footer {
     height: 50px; } }
 
 @media (min-width: 768px) {
-  .actu:nth-child(odd) {
-    left: 50%;
-    margin-left: 1px; }
-  .actu2:nth-child(even) {
-    left: 50%;
-    margin-left: 1px; } }
+  /*.actu:nth-child(odd) {
+left:50%;
+margin-left:1px;
+}
+.actu2:nth-child(even) {
+left:50%;
+margin-left:1px;
+}*/ }
 
 /* /DANIEL */
 /*!

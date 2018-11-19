@@ -27,7 +27,7 @@
 			
 			<?php query_posts('category_name=actualite');
 					 while ( have_posts() ) : the_post(); ?>
-				<div class="actu article col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+				<div class="actu article col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?><?php foreach((get_the_category()) as $category) { echo 'odd-'.$category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
