@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 	Theme Name: Alumni Ferrer 1
 	Theme URI: http://html5blank.com
@@ -10,6 +11,162 @@
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
+/* DANIEL */
+/* INDEX */
+/* Catégories */
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.hashtags {
+  color: white;
+  width: 200px;
+  text-align: center;
+  float: right;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 0 20px 20px;
+  text-transform: uppercase; }
+
+.hashtags.paramedical {
+  background-color: red; }
+
+.hashtags.arts-appliques {
+  background-color: green; }
+
+.hashtags.economique-cooremans {
+  background-color: orange; }
+
+.hashtags.pedagogique-bulls {
+  background-color: deepskyblue; }
+
+.hashtags.technique {
+  background-color: purple; }
+
+.hashtags.paramedical {
+  background-color: red; }
+
+.hashtags.social-cooremans {
+  background-color: yellow;
+  color: black; }
+
+/* /catégories */
+/* Titre actulaité */
+.titre-actu, .titre-actu2 {
+  color: black; }
+
+/* /Titre actualité */
+.date {
+  font-style: italic; }
+
+.news-content p {
+  margin-top: 20px; }
+
+/*.actu:nth-child(odd) {
+position: relative;
+left:50%;
+}*/
+.odd {
+  margin-left: 1px;
+  position: relative;
+  left: 50%; }
+
+/* /INDEX */
+/* PAGE EVENTS */
+/*.actu2:nth-child(even) {
+position: relative;
+left:50%;
+}
+.actu2 {
+
+}*/
+.img-top-actu {
+  background: url(http://localhost/alumni/wp-content/uploads/2018/10/nature3.jpg);
+  background-size: cover;
+  height: 600px; }
+
+.img-titre-actu h1 {
+  position: relative;
+  top: 150%;
+  float: right;
+  font-size: 125px;
+  margin-right: 20px; }
+
+/* /PAGE EVENTS */
+/* PAGE DETAIL EVENTS*/
+.img-top-actu-detail {
+  background: url(http://localhost/alumni/wp-content/uploads/2018/10/nature3.jpg);
+  background-size: cover;
+  height: 300px; }
+
+.info-prat-actu {
+  background-color: red;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 25px; }
+
+.info-prat-actu.paramedical {
+  background-color: red;
+  color: white; }
+
+.info-prat-actu.arts-appliques {
+  background-color: green;
+  color: white; }
+
+.info-prat-actu.economique-cooremans {
+  background-color: orange;
+  color: white; }
+
+.info-prat-actu.pedagogique-bulls {
+  background-color: deepskyblue;
+  color: white; }
+
+.info-prat-actu.technique {
+  background-color: purple;
+  color: white; }
+
+.info-prat-actu.paramedical {
+  background-color: red;
+  color: white; }
+
+.info-prat-actu.social-cooremans {
+  background-color: yellow;
+  color: black; }
+
+/* /PAGE DETAIL EVENTS*/
+/* FOOTER */
+footer {
+  background-color: dimgray;
+  color: white;
+  padding: 20px 0 0 0; }
+
+/* /FOOTER */
+@media (min-width: 1px) {
+  /*.actu:nth-child(odd){
+left:0;
+margin-left:0;
+}
+.actu2:nth-child(even){
+left:0;
+margin-left:0;
+}*/
+  .logo-footer {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; }
+  .logo-partner {
+    height: 50px; } }
+
+@media (min-width: 768px) {
+  /*.actu:nth-child(odd) {
+left:50%;
+margin-left:1px;
+}
+.actu2:nth-child(even) {
+left:50%;
+margin-left:1px;
+}*/ }
+
+/* /DANIEL */
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

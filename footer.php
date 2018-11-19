@@ -1,13 +1,33 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>Contact</h4>
+						<p>Lorme ipsum dolor sit amet, consectuteaur adispisching elit send in porta ligula.</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<h4>Suivez-nous</h4>
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+						<img class="logo-footer" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+					</div>
+					<div class="col-sm-4 text-right">
+						<h4>Partenaires</h4>
+						<img class="logo-partner" src="http://localhost/alumni/wp-content/uploads/2018/10/welcome-featured-image.jpg" alt="">
+					</div>
+					<div class="col-12 text-center">
+						<!-- copyright -->
+						<p class="copyright">
+						&copy; <?php echo date('Y'); ?> - <?php bloginfo('name'); ?>
+						</p>
+						<!-- /copyright -->
+					</div>
+				</div>
+			</div>
+				
 			</footer>
 			<!-- /footer -->
 
