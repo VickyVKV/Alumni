@@ -28,7 +28,7 @@ $('.button, .button2').css("cursor","pointer");
 	$(".button").click(function(){
 		
 		var value = $(this).attr("data-filter");
-		//console.log(value);
+		console.log(value);
 
 			if (value == "article")
 		{
@@ -153,7 +153,7 @@ $("#accueil").click(function(){
 	
 
   // Add smooth scrolling to all links in navbar + footer link
-  $(".btn a,[href='#mypage']").on('click', function(event) {
+  $(".btnXXXXXX ,[href='#mypage']").on('click', function(event) {
 
    // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
