@@ -14,7 +14,7 @@
 			<div class="row justify-content-around  justify-content-lg-end">
 	
 				<div class="seco col-9 col-lg-3 "><button type="button" class="btn btn-secondary" ><a href="#contacttout">Informations</a></button></div>
-				<div class="sinc col-9 col-lg-3"><button type="button" class="btn btn-secondary" ><a  href="#nouscontacter">Nous contactez</a></button></div>
+				<div class="sinc col-9 col-lg-3"><button type="button" class="btn btn-secondary" ><a  href="#nouscontacter">Nous contacter</a></button></div>
 	
 			</div>
 	
@@ -338,6 +338,5 @@
 
 </body>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
