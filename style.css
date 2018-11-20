@@ -33,9 +33,9 @@
   width: 100%;
   height: 200px;
   padding-top: 110px;
-  left: 0;
-  right: 0;
-  bottom: 0; }
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important; }
 
 .carousel-caption h5 {
   font-size: 30px; }
@@ -6640,7 +6640,7 @@ left:50%;
 
 }*/
 .img-top-actu {
-  background: url(http://localhost/alumni/wp-content/uploads/2018/10/nature3.jpg);
+  background: url(./img/blur-blurry-bright-404976.jpg);
   background-size: cover;
   height: 600px; }
 
@@ -6654,7 +6654,7 @@ left:50%;
 /* /PAGE EVENTS */
 /* PAGE DETAIL EVENTS*/
 .img-top-actu-detail {
-  background: url(http://localhost/alumni/wp-content/uploads/2018/10/nature3.jpg);
+  background: url(./img/coffee-cup-information-97050.jpg);
   background-size: cover;
   height: 300px; }
 
@@ -6762,7 +6762,7 @@ footer {
   background-color: gray; }
 
 .img-top-galerie {
-  background: url(http://localhost/alumni_groupe/wp-content/uploads/2018/11/camera-macro-optics-122400.jpg);
+  background: url(./img/camera-macro-optics-122400.jpg);
   background-size: cover;
   height: 600px; }
 
@@ -6771,6 +6771,18 @@ footer {
   top: 150%;
   float: right;
   font-size: 125px;
+  margin-right: 20px; }
+
+.img-top-accueil {
+  background: url(./img/business-computer-desk-1036808.jpg);
+  background-size: cover;
+  height: 600px; }
+
+.img-titre-accueil h1 {
+  position: relative;
+  top: 150%;
+  float: right;
+  font-size: 100px;
   margin-right: 20px; }
 
 .hovereffect .wp-post-image {

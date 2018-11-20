@@ -50,7 +50,7 @@
 
 ///////////////////////////////////////GALERIE/////////////////////////////////////////////////
 .img-top-galerie{
-background:	url(http://localhost/alumni_groupe/wp-content/uploads/2018/11/camera-macro-optics-122400.jpg);
+background:	url(./img/camera-macro-optics-122400.jpg);
 background-size: cover;
 height:600px;
 }
@@ -59,6 +59,19 @@ position: relative;
 top:150%;
 float:right;
 font-size: 125px;
+margin-right:20px;
+}
+
+.img-top-accueil{
+background:	url(./img/business-computer-desk-1036808.jpg);
+background-size: cover;
+height:600px;
+}
+.img-titre-accueil h1{
+position: relative;
+top:150%;
+float:right;
+font-size: 100px;
 margin-right:20px;
 }
 
