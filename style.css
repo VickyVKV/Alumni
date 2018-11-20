@@ -6793,10 +6793,6 @@ footer {
   width: 200px;
   height: 200px; }
 
-.hovereffect2 .wp-post-image {
-  width: 300px !important;
-  height: 200px; }
-
 .hovereffect:hover .overlay.arts-appliques {
   background-color: #76B729; }
 
@@ -6950,19 +6946,15 @@ footer {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
 
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
+.hovereffect2 {
+  width: 200px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
   position: relative;
-  font-size: 17px;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translatey(-100px);
-  -ms-transform: translatey(-100px);
-  transform: translatey(-100px);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  padding: 10px; }
+  text-align: center;
+  cursor: default;
+  margin: 10px 0; }
 
 .hovereffect2:hover .overlay2 {
   opacity: 0.8;
