@@ -11,6 +11,169 @@
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
+/* CSS Document */
+/* Scss Document */
+.container-fluid {
+  padding: 0; }
+
+.carousel {
+  width: 100%;
+  height: 500px; }
+
+.carousel img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; }
+
+.carousel-indicators li {
+  padding-top: 5px; }
+
+.carousel-caption {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 50%);
+  width: 100%;
+  height: 200px;
+  padding-top: 110px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.carousel-caption h5 {
+  font-size: 30px; }
+
+.img-top-event {
+  background: url(http://localhost/alumni/wp-content/uploads/2018/11/audience-auditorium-bible-301988.jpg);
+  background-size: cover;
+  height: 100vh; }
+
+.img-top-event-detail {
+  background: url(http://localhost/alumni/wp-content/uploads/2018/11/audience-auditorium-bible-301988.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 300px; }
+
+.img-titre-event h1 {
+  color: white;
+  position: relative;
+  top: 150%;
+  float: right;
+  font-size: 125px;
+  margin-right: 20px; }
+
+.filter {
+  width: 100vw; }
+
+.article {
+  margin-top: 50px; }
+
+.article img {
+  min-height: 30vh;
+  position: relative; }
+
+.article-event img {
+  min-height: 20vh;
+  position: relative; }
+
+/*.color2:hover{
+    opacity: 0.4;
+}
+.color2{
+	width:30vh;
+	height: 100%;
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:1;
+	&.arts-appliques {
+    background-color: $art;
+  }
+  &.economique-cooremans {
+    background-color: $eco;
+  }
+  &.paramedical {
+    background-color: $para;
+  }
+  &.pedagogique-bulls {
+    background-color: $peda;
+  }
+  &.social-cooremans {
+    background-color: $soci;
+  }
+  &.technique {
+    background-color: $tech ;
+}
+}*/
+/*h3{
+    position:absolute;
+    bottom:45%;
+    left:1;
+}*/
+.plus-event {
+  margin-bottom: 10%; }
+
+.color {
+  position: absolute;
+  top: 75%;
+  border-radius: 10px;
+  height: 95px;
+  min-width: 200px; }
+
+.color-detail {
+  position: absolute;
+  top: 68%;
+  border-radius: 10px;
+  height: 85px;
+  min-width: 150px;
+  margin-bottom: 20px; }
+
+.ct-events .arts-appliques .color, .arts-appliques .color-detail {
+  background-color: #76B729; }
+
+.ct-events .paramedical .color, .paramedical .color-detail {
+  background-color: #D21D10; }
+
+.ct-events .economique-cooremans .color, .economique-cooremans .color-detail {
+  background-color: #F49800; }
+
+.ct-events .technique .color, .technique .color-detail {
+  background-color: #5D0749; }
+
+.ct-events .pedagogique-bulls .color, .pedagogique-bulls .color-detail {
+  background-color: #1B97CE; }
+
+.ct-events .social-cooremans .color, .social-cooremans .color-detail {
+  background-color: #F0E51A; }
+
+.thumbnail-event img {
+  width: 100%; }
+
+@media (min-width: 1px) {
+  .color {
+    right: 13%; }
+  .color-detail {
+    right: 22%; } }
+
+@media (min-width: 576px) {
+  .color-detail {
+    right: -38%; } }
+
+@media (min-width: 768px) {
+  .color {
+    right: 22%; }
+  .color-detail {
+    right: -2%; } }
+
+@media (min-width: 992px) {
+  .color {
+    right: 8%; }
+  .color-detail {
+    right: -45%; } }
+
+@media (min-width: 1200px) {
+  .color {
+    right: 15%; }
+  .color-detail {
+    right: -22%; } }
+
 /* Scss Document */
 /*
 	Theme Name: Alumni Ferrer 1
