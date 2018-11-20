@@ -6538,14 +6538,9 @@ footer {
 
 /* /FOOTER */
 @media (min-width: 1px) {
-  /*.actu:nth-child(odd){
-left:0;
-margin-left:0;
-}
-.actu2:nth-child(even){
-left:0;
-margin-left:0;
-}*/
+  .odd {
+    left: 0;
+    margin-left: 0; }
   .logo-footer {
     height: 50px;
     width: 50px;
@@ -6554,14 +6549,15 @@ margin-left:0;
     height: 50px; } }
 
 @media (min-width: 768px) {
-  /*.actu:nth-child(odd) {
-left:50%;
-margin-left:1px;
-}
-.actu2:nth-child(even) {
-left:50%;
-margin-left:1px;
-}*/ }
+  .hashtags {
+    float: inherit; }
+  .odd {
+    left: 50%;
+    margin-left: 1px; } }
+
+@media (min-width: 992px) {
+  .hashtags {
+    float: right; } }
 
 /* /DANIEL */
 /* Scss Document */
