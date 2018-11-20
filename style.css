@@ -6614,6 +6614,10 @@ margin-left:1px;
   font-size: 125px;
   margin-right: 20px; }
 
+.hovereffect .wp-post-image {
+  width: 200px;
+  height: 200px; }
+
 .hovereffect:hover .overlay.arts-appliques {
   background-color: #76B729; }
 
@@ -6631,6 +6635,9 @@ margin-left:1px;
 
 .hovereffect:hover .overlay.technique {
   background-color: #5D0749; }
+
+.hovereffect:hover .overlay.paramedical.arts-appliques, .hovereffect:hover .overlay.paramedical.economique-cooremans, .hovereffect:hover .overlay.paramedical.pedagogique-bulls, .hovereffect:hover .overlay.paramedical.technique, .hovereffect:hover .overlay.paramedical.social-cooremans, .hovereffect:hover .overlay.arts-appliques.economique-cooremans, .hovereffect:hover .overlay.arts-appliques.pedagogique-bulls, .hovereffect:hover .overlay.arts-appliques.technique, .hovereffect:hover .overlay.arts-appliques.social-cooremans, .hovereffect:hover .overlay .hashtags.economique-cooremans.pedagogique-bulls, .hovereffect:hover .overlay.economique-cooremans.technique, .hovereffect:hover .overlay.economique-cooremans.social-cooremans, .hovereffect:hover .overlay.pedagogique-bulls.technique, .hovereffect:hover .overlay.pedagogique-bulls.social-cooremans, .hovereffect:hover .overlay.technique.social-cooremans {
+  background-color: #CECECE; }
 
 .color-galerie {
   width: 100%;
@@ -6651,6 +6658,8 @@ margin-left:1px;
     background-color: #F0E51A; }
   .color-galerie.technique {
     background-color: #5D0749; }
+  .color-galerie.paramedical.arts-appliques, .color-galerie.paramedical.economique-cooremans, .color-galerie.paramedical.pedagogique-bulls, .color-galerie.paramedical.technique, .color-galerie.paramedical.social-cooremans, .color-galerie.arts-appliques.economique-cooremans, .color-galerie.arts-appliques.pedagogique-bulls, .color-galerie.arts-appliques.technique, .color-galerie.arts-appliques.social-cooremans, .color-galerie .hashtags.economique-cooremans.pedagogique-bulls, .color-galerie.economique-cooremans.technique, .color-galerie.economique-cooremans.social-cooremans, .color-galerie.pedagogique-bulls.technique, .color-galerie.pedagogique-bulls.social-cooremans, .color-galerie.technique.social-cooremans {
+    background-color: #CECECE; }
 
 .hovereffect {
   width: 200px;

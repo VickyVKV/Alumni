@@ -62,6 +62,11 @@ font-size: 125px;
 margin-right:20px;
 }
 
+.hovereffect .wp-post-image{
+	width:200px;
+	height:200px;
+}
+
 .hovereffect:hover .overlay{
   &.arts-appliques {
     background-color: $art;
@@ -81,6 +86,9 @@ margin-right:20px;
   &.technique {
     background-color: $tech ;
   }
+	&.paramedical.arts-appliques, &.paramedical.economique-cooremans, &.paramedical.pedagogique-bulls, &.paramedical.technique, &.paramedical.social-cooremans, &.arts-appliques.economique-cooremans, &.arts-appliques.pedagogique-bulls, &.arts-appliques.technique, &.arts-appliques.social-cooremans, .hashtags.economique-cooremans.pedagogique-bulls, &.economique-cooremans.technique, &.economique-cooremans.social-cooremans, &.pedagogique-bulls.technique, &.pedagogique-bulls.social-cooremans, &.technique.social-cooremans {
+background-color:#CECECE;
+}
 }
 
 .color-galerie{
@@ -107,6 +115,9 @@ margin-right:20px;
   }
   &.technique {
     background-color: $tech ;
+}
+		&.paramedical.arts-appliques, &.paramedical.economique-cooremans, &.paramedical.pedagogique-bulls, &.paramedical.technique, &.paramedical.social-cooremans, &.arts-appliques.economique-cooremans, &.arts-appliques.pedagogique-bulls, &.arts-appliques.technique, &.arts-appliques.social-cooremans, .hashtags.economique-cooremans.pedagogique-bulls, &.economique-cooremans.technique, &.economique-cooremans.social-cooremans, &.pedagogique-bulls.technique, &.pedagogique-bulls.social-cooremans, &.technique.social-cooremans {
+background-color:#CECECE;
 }
 }
 
