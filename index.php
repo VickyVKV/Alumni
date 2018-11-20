@@ -7,7 +7,8 @@
 		<?php include("_slider.php"); ?>
   		</section>
 		<!-- / SLIDER -->
-		
+		<section class="container ct-news">
+		<br>
 		<div class="row filter">
 			<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="article"><a>Tout</a></div>
 			<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
@@ -19,8 +20,7 @@
 		</div>
 		
 		<!-- section news -->
-		<section class="container ct-news">
-		
+
 		<div class="row news">
 			<div class="col-12 my-5"><h2>Actualités</h2>
 			</div>
@@ -89,10 +89,4 @@
 		<!-- /section galerie -->
 	</main>
 
-<<<<<<< HEAD
-<?php get_sidebar(); ?>
-
-
-=======
->>>>>>> 3b46b12f0e3cb7b7d5c408c6e28c288238f01bc0
 <?php get_footer(); ?>
