@@ -9,6 +9,17 @@
 			</div>
 		</div>
             
+                       <div class="container bienvenue"> 
+            <div class="row align-items-start">
+                <div class="col-lg-6 col-sm-12 ">
+                    <h1>Bienvenue sur Alumni Ferrer</h1></div>
+               <div class="text-bienvenu col-lg-6 col-sm-12"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta ligula. Maecenas vehicula eleifend pretium. Sed ultrices lacus eget lacus interdum, sed maximus ipsum tristique. In sit amet ante et enim efficitur consectetur vel vel ipsum. Aenean eleifend mi ligula, sit amet feugiat quam accumsan at. Sed in tincidunt nulla, non gravida metus. Aenean vitae mauris faucibus, pulvinar sapien nec, blandit nunc. Sed pulvinar arcu at purus bibendum porttitor.</p>
+                </div>
+                </div>
+            </div>
+            
+
+            
 			<!-- SLIDER -->
 		<section id="slider" class="container-fluid">
 
