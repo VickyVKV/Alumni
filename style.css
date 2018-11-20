@@ -43,7 +43,7 @@
 .img-top-event {
   background: url(./img/black-and-white-camera-event-6227.jpg);
   background-size: cover;
-  height: 100vh; }
+  height: 600px; }
 
 .img-top-event-detail {
   background: url(http://localhost/alumni/wp-content/uploads/2018/11/audience-auditorium-bible-301988.jpg);
@@ -6770,7 +6770,7 @@ footer {
   position: relative;
   top: 150%;
   float: right;
-  font-size: 125w;
+  font-size: 125px;
   margin-right: 20px; }
 
 .img-top-accueil {

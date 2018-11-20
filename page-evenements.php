@@ -15,7 +15,7 @@
                 
                 <div class="row">
 			<div class="col-12 my-5"><h2>Evenements</h2>
-			</div></div>
+			</div>
                 
 <div class="row filter">
 			<div id="accueil" class="button col-lg-1 col-md-12 col-sm-12 text-center" data-filter="article"><a>Tout</a></div>
@@ -25,7 +25,7 @@
 			<div  id="peda" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
 			<div id="social" class="button col-lg-1 col-md-6 col-sm-12 text-center" data-filter="social-cooremans"><a>Social</a></div>
 			<div id="tech" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="technique"><a>Technique</a></div>
-		</div>
+		</div></div>
                 
                 
 			<div class="row justify-content-center">
