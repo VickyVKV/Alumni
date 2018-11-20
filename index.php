@@ -8,6 +8,7 @@
 				</div>
 			</div>
 		</div>
+            
 			<!-- SLIDER -->
 		<section id="slider" class="container-fluid">
 
