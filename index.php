@@ -8,15 +8,16 @@
   		</section>
 		<!-- / SLIDER -->
 		<section class="container ct-news">
-		<br>
+	<br>
+		<section class="container">
 		<div class="row filter">
-			<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="article"><a>Tout</a></div>
-			<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
-			<div id="eco" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
-			<div id="para" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
-			<div  id="peda" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
-			<div id="social" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="social-cooremans"><a>Social</a></div>
-			<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="technique"><a>Technique</a></div>
+			<div id="accueil" class="button col-lg-1 col-md-12 col-sm-12 text-center" data-filter="article"><a>Tout</a></div>
+			<div id="art" class="button  col-lg-2 col-md-6 col-sm-12 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
+			<div id="eco" class="button  col-lg-2 col-md-6 col-sm-12 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
+			<div id="para" class="button  col-lg-2 col-md-6 col-sm-12 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
+			<div  id="peda" class="button  col-lg-2 col-md-6 col-sm-12 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
+			<div id="social" class="button  col-lg-1 col-md-6 col-sm-12 text-center" data-filter="social-cooremans"><a>Social</a></div>
+			<div id="tech" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="technique"><a>Technique</a></div>
 		</div>
 		
 		<!-- section news -->

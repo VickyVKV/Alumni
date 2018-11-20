@@ -6425,25 +6425,22 @@ body {
   text-transform: uppercase; }
 
 .hashtags.paramedical {
-  background-color: red; }
+  background-color: #D21D10; }
 
 .hashtags.arts-appliques {
-  background-color: green; }
+  background-color: #76B729; }
 
 .hashtags.economique-cooremans {
-  background-color: orange; }
+  background-color: #F49800; }
 
 .hashtags.pedagogique-bulls {
-  background-color: deepskyblue; }
+  background-color: #1B97CE; }
 
 .hashtags.technique {
-  background-color: purple; }
-
-.hashtags.paramedical {
-  background-color: red; }
+  background-color: #5D0749; }
 
 .hashtags.social-cooremans {
-  background-color: yellow;
+  background-color: #F0E51A;
   color: black; }
 
 /* /catégories */
@@ -6598,6 +6595,9 @@ margin-left:1px;
 
 #tech {
   background-color: #5D0749; }
+
+.button:active {
+  background-color: gray; }
 
 .img-top-galerie {
   background: url(http://localhost/alumni_groupe/wp-content/uploads/2018/11/camera-macro-optics-122400.jpg);

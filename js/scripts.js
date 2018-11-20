@@ -102,7 +102,6 @@ $('.button, .button2').css("cursor","pointer");
 			
 		}
 
-
 		
 		}); // click .button
 		
@@ -152,4 +151,5 @@ $("#accueil").click(function(){
 	$(".hashtags.technique").removeClass("odd");	
 
 });
+
 

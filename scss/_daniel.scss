@@ -15,25 +15,22 @@ margin: 0 0 20px 20px;
 text-transform: uppercase;
 }
 .hashtags.paramedical {
-background-color:red;
+background-color:$para;
 }
 .hashtags.arts-appliques {
-background-color:green;
+background-color:$art;
 }
 .hashtags.economique-cooremans {
-background-color:orange;
+background-color:$eco;
 }
 .hashtags.pedagogique-bulls {
-background-color:deepskyblue;
+background-color:$peda;
 }
 .hashtags.technique {
-background-color:purple;
-}
-.hashtags.paramedical {
-background-color:red;
+background-color:$tech;
 }
 .hashtags.social-cooremans {
-background-color:yellow;
+background-color:$soci;
 color:black;
 }
 /* /catégories */
