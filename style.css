@@ -6440,8 +6440,11 @@ body {
   background-color: #5D0749; }
 
 .hashtags.social-cooremans {
-  background-color: #F0E51A;
-  color: black; }
+  background-color: #F0E51A; }
+
+/*---*/
+.hashtags.paramedical.arts-appliques, .hashtags.paramedical.economique-cooremans, .hashtags.paramedical.pedagogique-bulls, .hashtags.paramedical.technique, .hashtags.paramedical.social-cooremans, .hashtags.arts-appliques.economique-cooremans, .hashtags.arts-appliques.pedagogique-bulls, .hashtags.arts-appliques.technique, .hashtags.arts-appliques.social-cooremans, .hashtags.economique-cooremans.pedagogique-bulls, .hashtags.economique-cooremans.technique, .hashtags.economique-cooremans.social-cooremans, .hashtags.pedagogique-bulls.technique, .hashtags.pedagogique-bulls.social-cooremans, .hashtags.technique.social-cooremans {
+  background-color: #CECECE; }
 
 /* /catégories */
 /* Titre actulaité */
