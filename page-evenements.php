@@ -38,7 +38,7 @@
                         <div class="color">
                         </div>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+					<div class="hovereffect hovereffect2">
 						<!-- post thumbnail -->
 						<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -47,7 +47,12 @@
 						<?php endif; ?>
 						<!-- /post thumbnail -->
 						
-
+						<div class="overlay2 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+					<h3>
+						<a class="info" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h3>
+					<!-- /post title -->
+				
 				    
 					</article>
                  
@@ -57,6 +62,7 @@
 			  <?php endwhile;
 				wp_reset_query();?>
 
+				</div>
 			</div> <!-- Row events -->
             </section>
             
