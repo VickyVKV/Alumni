@@ -89,10 +89,4 @@
 		<!-- /section galerie -->
 	</main>
 
-<<<<<<< HEAD
-<?php get_sidebar(); ?>
-
-
-=======
->>>>>>> 3b46b12f0e3cb7b7d5c408c6e28c288238f01bc0
 <?php get_footer(); ?>
