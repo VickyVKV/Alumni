@@ -8,17 +8,6 @@
 				</div>
 			</div>
 		</div>
-		<br>
-		<div class="row filter">
-			<div id="accueil" class="button col-lg-1 col-md-12 col-sm-12 text-center" data-filter="article"><a>Tout</a></div>
-			<div id="art" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
-			<div id="eco" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
-			<div id="para" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
-			<div  id="peda" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
-			<div id="social" class="button col-lg-1 col-md-6 col-sm-12 text-center" data-filter="social-cooremans"><a>Social</a></div>
-			<div id="tech" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="technique"><a>Technique</a></div>
-		</div>
-		<br>
 			<!-- SLIDER -->
 		<section id="slider" class="container-fluid">
 
@@ -30,12 +19,23 @@
 		<section class="container ct-news">
 		
 		<div class="row news">
-			<div class="col-12 my-5"><h2>Actualités</h2>
+			
+			<div class="row filter mt-5">
+			<div id="accueil" class="button col-lg-1 col-md-12 col-12 text-center" data-filter="article"><a>Tout</a></div>
+			<div id="art" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
+			<div id="eco" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
+			<div id="para" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
+			<div  id="peda" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
+			<div id="social" class="button col-lg-1 col-md-6 col-12 text-center" data-filter="social-cooremans"><a>Social</a></div>
+			<div id="tech" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="technique"><a>Technique</a></div>
+		</div>
+			
+			<div class="col-12 mt-5"><h2>Actualités</h2>
 			</div>
 			
 			<?php query_posts('category_name=actualite');
 					 while ( have_posts() ) : the_post(); ?>
-				<div class="actu article col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?><?php foreach((get_the_category()) as $category) { echo 'odd-'.$category->slug . ' '; } ?>">
+				<div class="actu article col-lg-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?><?php foreach((get_the_category()) as $category) { echo 'odd-'.$category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -45,7 +45,7 @@
 					
 					if($category->slug  != "actualite" && $category->slug  != "evenement" && $category->slug  != "slider") {
 					
-					echo '<a  class="button2 '.$category->slug.'"  data-filter="'.$category->slug.'">' . $category->slug . '</a> '; 
+					echo '<div  class=" '.$category->slug.'"  data-filter="'.$category->slug.'">' . $category->slug . '</div> '; 
 					
 					}
 					
@@ -88,7 +88,7 @@
 		<section class="container ct-events">
                 
                 <div class="row">
-			<div class="col-12 my-5"><h2>Evenements</h2>
+			<div class="col-12 mt-5"><h2>Evenements</h2>
 			</div></div>        
                 
 			<div class="row justify-content-center">
@@ -125,7 +125,7 @@
 		<!-- /section events -->
 		
 		<!-- section Galerie -->
-		<section class="container ct-galerie">
+		<section class="container ct-galerie mt-5">
 		<div class="row">
 			<h2 class="col-12 "> Galerie</h2>
 			<?php $my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 4, 'category_name' => 'galerie'));?>

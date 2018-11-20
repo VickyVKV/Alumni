@@ -14,7 +14,7 @@
 /* CSS Document */
 /* Scss Document */
 .container-fluid {
-  padding: 0; }
+  padding: 0 !important; }
 
 .carousel {
   width: 100%;
@@ -6709,18 +6709,18 @@ footer {
     width: 50px;
     border-radius: 50%; }
   .logo-partner {
-    height: 50px; } }
-
-@media (min-width: 768px) {
+    height: 50px; }
   .hashtags {
-    float: inherit; }
+    float: inherit; } }
+
+@media (min-width: 576px) {
+  .hashtags {
+    float: right; } }
+
+@media (min-width: 992px) {
   .odd {
     left: 50%;
     margin-left: 1px; } }
-
-@media (min-width: 992px) {
-  .hashtags {
-    float: right; } }
 
 /* /DANIEL */
 /* Scss Document */
@@ -6776,14 +6776,18 @@ footer {
 .img-top-accueil {
   background: url(./img/business-computer-desk-1036808.jpg);
   background-size: cover;
-  height: 600px; }
+  height: 100vh;
+  width: 100%; }
 
 .img-titre-accueil h1 {
   position: relative;
   top: 150%;
   float: right;
   font-size: 100px;
-  margin-right: 20px; }
+  padding-right: 20px; }
+
+.row {
+  margin: 0 !important; }
 
 .hovereffect .wp-post-image {
   width: 200px;

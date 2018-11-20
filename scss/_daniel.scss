@@ -143,7 +143,6 @@ padding: 20px 0 0 0;
 left:0;
 margin-left:0;
 }
-
 .logo-footer {
 height: 50px;
 width: 50px;
@@ -152,23 +151,23 @@ border-radius:50%;
 .logo-partner {
 height:50px;	
 }
-}
-@media (min-width:576px){
-
-}
-@media (min-width:768px){
 .hashtags {
 float:inherit;
 }
+}
+@media (min-width:576px){
+.hashtags {
+float:right;
+}	
+}
+@media (min-width:768px){
+
+}
+@media (min-width:992px){
 .odd {
 left:50%;
 margin-left:1px;
 }
-}
-@media (min-width:992px){
-.hashtags {
-float:right;
-}	
 }
 @media (min-width:1200px){
 	

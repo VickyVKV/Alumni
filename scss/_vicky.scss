@@ -65,14 +65,18 @@ margin-right:20px;
 .img-top-accueil{
 background:	url(./img/business-computer-desk-1036808.jpg);
 background-size: cover;
-height:600px;
+height:100vh;
+width:100%;
 }
 .img-titre-accueil h1{
 position: relative;
 top:150%;
 float:right;
 font-size: 100px;
-margin-right:20px;
+padding-right:20px;
+}
+.row {
+margin:0 !important;
 }
 
 .hovereffect .wp-post-image{
