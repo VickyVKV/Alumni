@@ -1,24 +1,33 @@
 <?php get_header(); ?>
 
+<body id="mypage">
 
-<div class="container-fluid">
 
-<div id="choixdecontact">
-	
-<div class="row align-items-center">
-	
-<div class="col-12">
-	
-	<button type="button" class="btn btn-secondary">Secondary</button>
-	<button type="button" class="btn btn-secondary">Secondary</button>
 	
 	
+	<div id="choixdecontact" class="row ">
 	
-</div>
+		<div class="col-12 align-self-center">
+	
+
+	
+			<div class="row justify-content-around  justify-content-lg-end">
+	
+				<div class="seco col-9 col-lg-3 "><button type="button" class="btn btn-secondary" ><a href="#contacttout">Informations</a></button></div>
+				<div class="sinc col-9 col-lg-3"><button type="button" class="btn btn-secondary" ><a  href="#nouscontacter">Nous contactez</a></button></div>
+	
+			</div>
 	
 	
 	
-</div>	
+
+	
+	
+		
+	
+	
+	
+	</div>	
 	
 	
 </div>
@@ -30,19 +39,29 @@
 		<!-- section -->
 		<section>
 
-			<h1 class="h1contact"><?php the_title(); ?></h1>
+			
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
-			<div class="row justify-content-center">
+			<div class="row ">
    				<!--social-->
 		
-		<div class="col-lg-8 col-12">
+		<div class="col-lg-12 col-12">
 		
-		<div class="row">
 		
-			<div class="infos col-10 col-lg-5">
+		
+		
+		
+		
+		
+		<div class="row justify-content-center">
+		
+		
+		<div class="col-12"><h1 class="h1contact"><?php the_title(); ?></h1></div>
+		
+		
+			<div class="infos col-s-10 col-md-4 col-lg-3">
 			
 	
 			<div class="soc back"></div>
@@ -75,7 +94,7 @@
 			
 		<!--technique-->
 		
-			<div class="infos col-10 col-lg-5">
+			<div class="infos col-s-10 col-md-4 col-lg-3">
 			
 	
 			<div class="tech back"></div>
@@ -106,7 +125,7 @@
 		
 		<!--arts appliqués-->
 		
-			<div class="infos col-10 col-lg-5">
+			<div class="infos col-s-10 col-md-4 col-lg-3">
 	
 			<div class="app back"></div>
 			
@@ -141,7 +160,7 @@
 			<!--économique-->
 			
 			
-			<div class="infos col-10 col-lg-5">
+			<div class="infos col-s-10 col-md-4 col-lg-3">
 			
 			<div class="eco back"></div>
 			
@@ -174,7 +193,7 @@
 			
 			<!--paramédical-->
 			
-			<div class="infos col-10 col-lg-5">
+			<div class="infos col-s-10 col-md-4 col-lg-3">
 			
 			<div class="para back"></div>
 
@@ -206,7 +225,7 @@
 			
 			<!--Pédagogique-->
 			
-			<div class="infos col-10 col-lg-5">
+			<div class="infos col-s-10 col-md-4 col-lg-3">
 	
 			
 			<div class="peda back"></div>
@@ -239,30 +258,7 @@
           
 			
        
-             <div class="formulairedecontact col-lg-3 col-11">
-			
-		
-				<h2 class="titrecontact">Formulaire de contact</h2>
-				<br>
-			<form>
-			
-			<div clas="row">
-			<article id="post-<?php the_ID(); ?> " <?php post_class(); ?>>
-
-				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
-			</article>
-       
-      		 </div>
-       
-       	 </form>
-                </div>
+          
                 </div>
                
 			<!-- /article -->
@@ -283,10 +279,64 @@
 
 		</section>
 		<!-- /section -->
-	</main>
+	
 </div>
 
+<div id="nouscontacter" class="row">
+
+
+
+    <div class="formulairedecontact col-lg-5 col-10 ">
+			
+
+		<div class="row justify-content-center">
+			
+			<div class="col-12 col-lg-9 align-self-center">
+			<form>
+			
+			<h1 class="titrecontact">Formulaire de contact</h1>
+			
+			
+			<article id="post-<?php the_ID(); ?> " <?php post_class(); ?>>
+
+				<?php the_content(); ?>
+
+				<?php comments_template( '', true ); // Remove if you don't want comments ?>
+
+				<br class="clear">
+
+				<?php edit_post_link(); ?>
+
+			</article>
+       
+      		
+       
+       	 	</form>
+       	 	
+       	 	</div>
+				
+       	 </div>	
+       	 	
+       	
+       	 	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
+</div>
+
+</body>
 
 <?php get_sidebar(); ?>
 
