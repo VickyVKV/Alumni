@@ -102,7 +102,6 @@ $('.button, .button2').css("cursor","pointer");
 			
 		}
 
-
 		
 		}); // click .button
 		
@@ -212,6 +211,7 @@ $("#accueil").click(function(){
 });
 
 
+<<<<<<< HEAD
 
 
 
@@ -220,3 +220,5 @@ $("#accueil").click(function(){
 
 
 
+=======
+>>>>>>> 8214d9d7467cbc9002fc80380585ef5c7b45243c

@@ -1,33 +1,87 @@
 <?php get_header(); ?>
 
-	<main role="main">
+		<main role="main">
+		<div class="container-fluid img-top-accueil">
+			<div class="row">
+				<div class="col-12 img-titre-accueil">
+					<h1>Alumni</h1>
+				</div>
+			</div>
+		</div>
+            
 			<!-- SLIDER -->
 		<section id="slider" class="container-fluid">
 
-		<?php include("_slider.php"); ?>
+		
+<div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">					
+ <?php 
+   $number = 0;
+?>
+<ol class="carousel-indicators">
+
+    <?php query_posts('category_name=slider');
+	while(have_posts()): the_post(); ?>
+      <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $number++; ?>"></li>
+      <?php endwhile; ?>
+</ol>
+				
+<div class="carousel-inner ">
+	
+	<?php query_posts('category_name=slider');
+         while ( have_posts() ) : the_post(); ?>
+    <div class="carousel-item">
+	
+	<a href="<?php echo get_permalink(); ?>">
+      <?php the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );?>
+<div class="carousel-caption d-none d-sm-block">
+    <h5><?php the_title(); ?></h5>
+    <p><?php //the_excerpt(); ?></p>
+	<!--<p> <?php 
+foreach((get_the_category()) as $cat) { 
+echo $cat->cat_name . ' '; 
+} ?> </p>-->
+  </div>
+		</a>
+
+    </div>
+  <?php endwhile;
+	wp_reset_query();?>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  </div>
+				
+         
   		</section>
 		<!-- / SLIDER -->
-		
-		<div class="row filter">
-			<div id="accueil" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="article"><a>Tout</a></div>
-			<div id="art" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
-			<div id="eco" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
-			<div id="para" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
-			<div  id="peda" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
-			<div id="social" class="button col-12 col-md-1 mt-md-0 mt-2 text-center" data-filter="social-cooremans"><a>Social</a></div>
-			<div id="tech" class="button col-12 col-md-2 mt-md-0 mt-2 text-center" data-filter="technique"><a>Technique</a></div>
-		</div>
 		
 		<!-- section news -->
 		<section class="container ct-news">
 		
 		<div class="row news">
-			<div class="col-12 my-5"><h2>Actualités</h2>
+			
+			<div class="row filter mt-5">
+			<div id="accueil" class="button col-lg-1 col-md-12 col-12 text-center" data-filter="article"><a>Tout</a></div>
+			<div id="art" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
+			<div id="eco" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
+			<div id="para" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
+			<div  id="peda" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
+			<div id="social" class="button col-lg-1 col-md-6 col-12 text-center" data-filter="social-cooremans"><a>Social</a></div>
+			<div id="tech" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="technique"><a>Technique</a></div>
+		</div>
+			
+			<div class="col-12 mt-5"><h2>Actualités</h2>
 			</div>
 			
 			<?php query_posts('category_name=actualite');
 					 while ( have_posts() ) : the_post(); ?>
-				<div class="actu article col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?><?php foreach((get_the_category()) as $category) { echo 'odd-'.$category->slug . ' '; } ?>">
+				<div class="actu article col-lg-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?><?php foreach((get_the_category()) as $category) { echo 'odd-'.$category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -37,7 +91,7 @@
 					
 					if($category->slug  != "actualite" && $category->slug  != "evenement" && $category->slug  != "slider") {
 					
-					echo '<a  class="button2 '.$category->slug.'"  data-filter="'.$category->slug.'">' . $category->slug . '</a> '; 
+					echo '<div  class=" '.$category->slug.'"  data-filter="'.$category->slug.'">' . $category->slug . '</div> '; 
 					
 					}
 					
@@ -78,21 +132,92 @@
 		
 		<!-- section events -->
 		<section class="container ct-events">
-			<?php include("_events.php"); ?>
-		</section>
+                
+                <div class="row">
+			<div class="col-12 mt-5"><h2>Evenements</h2>
+			</div></div>        
+                
+			<div class="row justify-content-center">
+				<?php query_posts('category_name=evenement');
+					 while ( have_posts() ) : the_post(); ?>
+					<div class="article text-center col-10 col-lg-5 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+					<!-- article -->
+                        
+                        
+                        <div class="color">
+                        </div>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+						<!-- post thumbnail -->
+						<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
+							</a>
+						<?php endif; ?>
+						<!-- /post thumbnail -->
+						
+				    
+					</article>
+                 
+					</div>
+					<!-- /article -->
+
+			  <?php endwhile;
+				wp_reset_query();?>
+
+			</div> <!-- Row events -->
+            </section>
+            
 		<!-- /section events -->
 		
 		<!-- section Galerie -->
-		<section class="container ct-galerie">
-		<?php include("_galerie.php"); ?>
+		<section class="container ct-galerie mt-5">
+		<div class="row">
+			<h2 class="col-12 "> Galerie</h2>
+			<?php $my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 4, 'category_name' => 'galerie'));?>
+              
+               <!--Pour ne garder que les evenements, il faut aussi modifier la boucle en faisant appel à la variable créée juste avant-->
+               <?php if ($my_posts->have_posts()) : while ($my_posts->have_posts() ) : $my_posts->the_post(); ?>
+				<div class="article col-lg-3 col-md-6 col-sm-12 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+				<!-- article -->
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<div class="hovereffect">
+
+					<!-- post thumbnail -->
+					<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+					<?php the_post_thumbnail(array(150,150)); // Declare pixel size you need inside the array ?>
+					
+					<?php endif; ?>
+					<!-- /post thumbnail -->
+					<div class="color-galerie  <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>"></div>
+					<!-- post title -->
+					<div class="overlay <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
+					<h3>
+						<a class="info" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h3>
+					<!-- /post title -->
+					<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+
+				</article>
+				</div>
+				<!-- /article -->
+
+			  <?php endwhile; else: ?>
+					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+				<?php endif; ?><!--Fin du loop pour les posts-->
+
+			<?php //get_template_part('pagination'); ?>
+			</div> <!-- Row news -->
+        </div>
+    </div>
+</div>
+
+
 		</section>
 		<!-- /section galerie -->
 	</main>
 
-<<<<<<< HEAD
-<?php get_sidebar(); ?>
 
 
-=======
->>>>>>> 3b46b12f0e3cb7b7d5c408c6e28c288238f01bc0
+
 <?php get_footer(); ?>

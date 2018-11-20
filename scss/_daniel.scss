@@ -15,26 +15,26 @@ margin: 0 0 20px 20px;
 text-transform: uppercase;
 }
 .hashtags.paramedical {
-background-color:red;
+background-color:$para;
 }
 .hashtags.arts-appliques {
-background-color:green;
+background-color:$art;
 }
 .hashtags.economique-cooremans {
-background-color:orange;
+background-color:$eco;
 }
 .hashtags.pedagogique-bulls {
-background-color:deepskyblue;
+background-color:$peda;
 }
 .hashtags.technique {
-background-color:purple;
-}
-.hashtags.paramedical {
-background-color:red;
+background-color:$tech;
 }
 .hashtags.social-cooremans {
-background-color:yellow;
-color:black;
+background-color:$soci;
+}
+/*---*/
+.hashtags.paramedical.arts-appliques, .hashtags.paramedical.economique-cooremans, .hashtags.paramedical.pedagogique-bulls, .hashtags.paramedical.technique, .hashtags.paramedical.social-cooremans, .hashtags.arts-appliques.economique-cooremans, .hashtags.arts-appliques.pedagogique-bulls, .hashtags.arts-appliques.technique, .hashtags.arts-appliques.social-cooremans, .hashtags.economique-cooremans.pedagogique-bulls, .hashtags.economique-cooremans.technique, .hashtags.economique-cooremans.social-cooremans, .hashtags.pedagogique-bulls.technique, .hashtags.pedagogique-bulls.social-cooremans, .hashtags.technique.social-cooremans {
+background-color:#CECECE;
 }
 /* /catégories */
 
@@ -73,7 +73,7 @@ left:50%;
 
 }*/
 .img-top-actu{
-background:	url(http://localhost/alumni/wp-content/uploads/2018/10/nature3.jpg);
+background:	url(./img/blur-blurry-bright-404976.jpg);
 background-size: cover;
 height:600px;
 }
@@ -88,7 +88,7 @@ margin-right:20px;
 
 /* PAGE DETAIL EVENTS*/
 .img-top-actu-detail {
-background:	url(http://localhost/alumni/wp-content/uploads/2018/10/nature3.jpg);
+background:	url(./img/coffee-cup-information-97050.jpg);
 background-size: cover;
 height:300px;
 }
@@ -139,14 +139,10 @@ padding: 20px 0 0 0;
 }
 /* /FOOTER */
 @media (min-width:1px){
-/*.actu:nth-child(odd){
+.odd{
 left:0;
 margin-left:0;
 }
-.actu2:nth-child(even){
-left:0;
-margin-left:0;
-}*/
 .logo-footer {
 height: 50px;
 width: 50px;
@@ -155,22 +151,23 @@ border-radius:50%;
 .logo-partner {
 height:50px;	
 }
+.hashtags {
+float:inherit;
+}
 }
 @media (min-width:576px){
-
+.hashtags {
+float:right;
+}	
 }
 @media (min-width:768px){
-/*.actu:nth-child(odd) {
-left:50%;
-margin-left:1px;
-}
-.actu2:nth-child(even) {
-left:50%;
-margin-left:1px;
-}*/
+
 }
 @media (min-width:992px){
-	
+.odd {
+left:50%;
+margin-left:1px;
+}
 }
 @media (min-width:1200px){
 	
