@@ -11,14 +11,13 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
-@import "colors";
-@import "bootstrap";
 
 
+#mypage {padding: 0px; margin:0px;}
 
 body {background:grey;
 		margin:0px;
-padding:0px;}
+		padding:0px;}
 
 
 #choixdecontact {
@@ -29,19 +28,54 @@ min-height: 100vh;
 padding-top: 0px;
 	margin:0px;
 	
+		
+		
 	
-}
+	
+	.seco ,.sinc{min-height:15vh; }	
+	
+	.seco a,.sinc a{
+			color:white; 
+			text-align: center;
+			font-size:5vh;
+			text-decoration: none;
+			
+			
+			
+	}
+	}	
+	
+.h1contact {padding-left:50px;}
 
 #contacttout { 
 	
 background-color:#F0F0F0;
 background-position:center ;
 background-size:cover;
-min-height: 120vh;
+min-height: 100vh;
 padding-top: 100px;
 	margin:0px;
 
 }
+
+#nouscontacter { 
+	
+background-image:url(./img/adult-business-businessman-1061588.jpg);
+background-position:center ;
+background-size:cover;
+min-height: 100vh;
+
+	margin:0px;
+
+}
+
+.formulairedecontact {background-color: white;
+						min-height: 100vh;
+						padding-top:80px;
+							
+							}
+
+
 
 
 .infos {
@@ -55,6 +89,7 @@ padding-top: 100px;
 				background-color: white;
 				position: relative;
 				padding:20px;
+				border-top-left-radius: 20px;
 		
 		
 		
@@ -91,4 +126,45 @@ padding-top: 100px;
 
 
 
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
 
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .col-sm-4, .col-sm-5 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}

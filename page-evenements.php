@@ -27,7 +27,7 @@
 			<div id="tech" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="technique"><a>Technique</a></div>
 		</div></div>
                 
-                
+            <div class="container">    
 			<div class="row justify-content-center">
 				<?php query_posts('category_name=evenement');
 					 while ( have_posts() ) : the_post(); ?>
