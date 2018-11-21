@@ -47,7 +47,7 @@
 					<!-- /logo -->
 
 					<!-- nav -->
-					<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top nav" role="navigation">
+					<nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top nav" role="navigation">
 					  <a class="navbar-brand" href="/alumni"><img src ="<?php echo get_template_directory_uri(); ?>/img/AlumniLogo.png"></a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
