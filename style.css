@@ -17,6 +17,9 @@
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
+.bg-nav {
+  background-color: white; }
+
 .navbar-brand img {
   height: 60px; }
 
