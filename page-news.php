@@ -29,7 +29,7 @@
 			<div class="row news my-5">
 			<?php query_posts('category_name=actualite');
 					 while ( have_posts() ) : the_post(); ?>
-				<div class="actu2 article col-md-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?><?php foreach((get_the_category()) as $category) { echo 'odd-'.$category->slug . ' '; } ?>">
+				<div class="actu article col-lg-6 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?><?php foreach((get_the_category()) as $category) { echo 'odd-'.$category->slug . ' '; } ?>">
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -39,7 +39,7 @@
 					
 					if($category->slug  != "actualite" && $category->slug  != "evenement" && $category->slug  != "slider") {
 					
-					echo '<a  class="button2 '.$category->slug.'"  data-filter="'.$category->slug.'">' . $category->slug . '</a> '; 
+					echo '<div  class=" '.$category->slug.'"  data-filter="'.$category->slug.'">' . $category->slug . '</div> '; 
 					
 					}
 					
@@ -50,7 +50,7 @@
 						
 					<!-- post title -->
 					<h3>
-						<a class="titre-actu2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+						<a class="titre-actu" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h3>
 					<!-- /post title -->
 

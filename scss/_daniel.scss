@@ -154,14 +154,32 @@ height:50px;
 .hashtags {
 float:inherit;
 }
+.img-titre-actu h1, .img-titre-galerie h1, .img-titre-event h1{
+font-size:50px !important;
+top:275% !important;
+color:white !important;
+}
+.img-top-actu, .img-top-galerie, .img-top-event{
+height:400px !important;
+}
 }
 @media (min-width:576px){
 .hashtags {
 float:right;
-}	
+}
+.img-titre-actu h1, .img-titre-galerie h1, .img-titre-event h1{
+font-size:100px !important;
+top:200% !important;
+}
+.img-top-actu, .img-top-galerie, .img-top-event{
+height:600px !important;
+}
 }
 @media (min-width:768px){
-
+.img-titre-actu h1, .img-titre-galerie h1, .img-titre-event h1{
+font-size:125px !important;
+top:150% !important;
+}
 }
 @media (min-width:992px){
 .odd {
