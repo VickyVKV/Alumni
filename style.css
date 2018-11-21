@@ -181,6 +181,12 @@
 .text-bienvenu {
   margin-top: 100px; }
 
+.switch {
+  color: red; }
+
+.titre-decale {
+  padding-left: 100px; }
+
 /* Scss Document */
 /*
 	Theme Name: Alumni Ferrer 1
