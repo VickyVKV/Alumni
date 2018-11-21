@@ -145,7 +145,7 @@ echo $cat->cat_name . ' ';
 		<section class="container ct-events">
                 
                 <div class="row">
-			<div class="col-12 mt-5"><h2>Evenements</h2>
+			<div class="col-12 mt-5"><h2>Evénements</h2>
 			</div></div>        
                 
 			<div class="row justify-content-end">
@@ -189,7 +189,7 @@ echo $cat->cat_name . ' ';
 		<!-- section Galerie -->
 		<section class="container ct-galerie mt-5">
 		<div class="row">
-			<h2 class="col-12 "> Galerie</h2>
+			<h2 class="col-12 "> Galeries</h2>
 			<?php $my_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 4, 'category_name' => 'galerie'));?>
               
                <!--Pour ne garder que les evenements, il faut aussi modifier la boucle en faisant appel à la variable créée juste avant-->
