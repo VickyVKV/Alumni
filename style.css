@@ -427,31 +427,27 @@ left:50%;
   font-size: 25px; }
 
 .info-prat-actu.paramedical {
-  background-color: red;
+  background-color: #D21D10;
   color: white; }
 
 .info-prat-actu.arts-appliques {
-  background-color: green;
+  background-color: #76B729;
   color: white; }
 
 .info-prat-actu.economique-cooremans {
-  background-color: orange;
+  background-color: #F49800;
   color: white; }
 
 .info-prat-actu.pedagogique-bulls {
-  background-color: deepskyblue;
+  background-color: #1B97CE;
   color: white; }
 
 .info-prat-actu.technique {
-  background-color: purple;
-  color: white; }
-
-.info-prat-actu.paramedical {
-  background-color: red;
+  background-color: #5D0749;
   color: white; }
 
 .info-prat-actu.social-cooremans {
-  background-color: yellow;
+  background-color: #F0E51A;
   color: black; }
 
 /* /PAGE DETAIL EVENTS*/
