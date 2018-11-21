@@ -81,7 +81,7 @@ margin:0 !important;
 	height:200px;
 }
 
-.hovereffect:hover .overlay{
+.hovereffect:hover .overlay, .hovereffect:hover .overlay2 {
   &.arts-appliques {
     background-color: $art;
   }
@@ -105,6 +105,7 @@ background-color:#CECECE;
 }
 }
 
+
 .color-galerie{
 	width:100%;
 	height: 100%;
@@ -112,6 +113,29 @@ background-color:#CECECE;
 	position:absolute;
 	top:0;
 	left:0;
+	&.arts-appliques {
+    background-color: $art;
+  }
+  &.economique-cooremans {
+    background-color: $eco;
+  }
+  &.paramedical {
+    background-color: $para;
+  }
+  &.pedagogique-bulls {
+    background-color: $peda;
+  }
+  &.social-cooremans {
+    background-color: $soci;
+  }
+  &.technique {
+    background-color: $tech ;
+}
+		&.paramedical.arts-appliques, &.paramedical.economique-cooremans, &.paramedical.pedagogique-bulls, &.paramedical.technique, &.paramedical.social-cooremans, &.arts-appliques.economique-cooremans, &.arts-appliques.pedagogique-bulls, &.arts-appliques.technique, &.arts-appliques.social-cooremans, .hashtags.economique-cooremans.pedagogique-bulls, &.economique-cooremans.technique, &.economique-cooremans.social-cooremans, &.pedagogique-bulls.technique, &.pedagogique-bulls.social-cooremans, &.technique.social-cooremans {
+background-color:#CECECE;
+}
+}
+.ct-events .color{
 	&.arts-appliques {
     background-color: $art;
   }
