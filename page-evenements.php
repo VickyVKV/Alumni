@@ -28,7 +28,7 @@
 		</div></div>
                 
             <div class="container">    
-			<div class="row justify-content-center">
+			<div class="row justify-content-end">
 				<?php query_posts('category_name=evenement');
 					 while ( have_posts() ) : the_post(); ?>
 					<div class="article text-center col-10 col-lg-5 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
