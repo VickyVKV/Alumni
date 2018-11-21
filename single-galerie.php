@@ -7,7 +7,7 @@
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article class="text-center" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
@@ -19,17 +19,13 @@
 			<!-- /post thumbnail -->
 <div class="container">
 			<!-- post title -->
-			<h1>
+			<h1 class="mt-5">
 				<?php the_title(); ?>
 			</h1>
 			<!-- /post title -->
 			
 
 			<?php the_content(); // Dynamic Content ?>
-
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
 
 
 		</article>

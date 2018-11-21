@@ -28,10 +28,10 @@
 			<div class="col-sm-5">
 			<div class="info-prat-actu <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
 			
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span><br>
+			<span class="author"><?php _e( 'Publié par', 'html5blank' ); ?> <?php the_author(); ?></span><br>
 			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 
-			<p><?php _e( 'Categorised in: <br>', 'html5blank' ); the_category(', '); // Separated by commas ?></p>	
+			<?php /*?><p><?php _e( 'Catégorie: <br>', 'html5blank' ); the_category(', '); // Separated by commas ?></p><?php */?>	
 			</div>
 				
 			<div>
