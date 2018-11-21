@@ -13,7 +13,7 @@
 		<section class="container ct-galerie">
 			
 			<div class="row">
-			<div class="col-12 my-5"><h2>Galerie</h2>
+			<div class="col-12 my-5"><h2>Galeries</h2>
 			</div>
 				
 			<div class="row filter mt-5">
