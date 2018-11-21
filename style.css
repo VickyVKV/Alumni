@@ -13,6 +13,13 @@
 */
 /* CSS Document */
 /* Scss Document */
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.navbar-brand img {
+  height: 60px; }
+
 .container-fluid {
   padding: 0 !important; }
 
@@ -181,9 +188,6 @@
 
 .text-bienvenu {
   margin-top: 100px; }
-
-.switch {
-  color: red; }
 
 .titre-decale {
   padding-left: 100px; }
