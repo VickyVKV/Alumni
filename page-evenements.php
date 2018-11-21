@@ -18,17 +18,17 @@
 			</div>
                 
 <div class="row filter">
-			<div id="accueil" class="button col-lg-1 col-md-12 col-sm-12 text-center" data-filter="article"><a>Tout</a></div>
-			<div id="art" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
-			<div id="eco" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
-			<div id="para" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
-			<div  id="peda" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
-			<div id="social" class="button col-lg-1 col-md-6 col-sm-12 text-center" data-filter="social-cooremans"><a>Social</a></div>
-			<div id="tech" class="button col-lg-2 col-md-6 col-sm-12 text-center" data-filter="technique"><a>Technique</a></div>
+			<div id="accueil" class="button col-lg-1 col-md-12 col-12 text-center" data-filter="article"><a>Tout</a></div>
+			<div id="art" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="arts-appliques"><a>Arts appliqués</a></div>
+			<div id="eco" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="economique-cooremans"><a>Economie</a></div>
+			<div id="para" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="paramedical"><a>Paramédicale</a></div>
+			<div  id="peda" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="pedagogique-bulls"><a>Pédagogique</a></div>
+			<div id="social" class="button col-lg-1 col-md-6 col-12 text-center" data-filter="social-cooremans"><a>Social</a></div>
+			<div id="tech" class="button col-lg-2 col-md-6 col-12 text-center" data-filter="technique"><a>Technique</a></div>
 		</div></div>
                 
-                
-			<div class="row justify-content-center">
+            <div class="container">    
+			<div class="row justify-content-end">
 				<?php query_posts('category_name=evenement');
 					 while ( have_posts() ) : the_post(); ?>
 					<div class="article text-center col-10 col-lg-5 <?php foreach((get_the_category()) as $category) { echo $category->slug . ' '; } ?>">
