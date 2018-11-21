@@ -13,6 +13,12 @@
 */
 /* CSS Document */
 /* Scss Document */
+.col-7 a {
+  color: black !important; }
+
+.col-7 a:hover {
+  text-decoration: none; }
+
 .navbar {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }

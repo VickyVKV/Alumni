@@ -14,7 +14,7 @@
             <section class="container ct-events">
                 
                 <div class="row">
-			<div class="col-12 my-5"><h2>Evenements</h2>
+			<div class="col-12 my-5"><h2>Evénements</h2>
 			</div>
                 
 <div class="row filter">
