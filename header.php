@@ -53,9 +53,10 @@
 						<span class="navbar-toggler-icon"></span>
 					  </button>
 					  <div class="collapse navbar-collapse" id="navbarNav">
-				
+						
 					
 						<?php html5blank_nav(); ?>
+						<?php echo do_shortcode('[theme_switcha_select text="Choose a theme.."]')  ;?>
 					 </div>
 					</nav>
 					<!-- /nav -->

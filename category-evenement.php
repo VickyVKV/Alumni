@@ -35,7 +35,7 @@
 					<!-- article -->
                         
                         
-                        <div class="color">
+                        <div class="hashtag color">
                         </div>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="hovereffect hovereffect2">

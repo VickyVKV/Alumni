@@ -608,25 +608,25 @@ footer {
   .color-galerie.paramedical.arts-appliques, .color-galerie.paramedical.economique-cooremans, .color-galerie.paramedical.pedagogique-bulls, .color-galerie.paramedical.technique, .color-galerie.paramedical.social-cooremans, .color-galerie.arts-appliques.economique-cooremans, .color-galerie.arts-appliques.pedagogique-bulls, .color-galerie.arts-appliques.technique, .color-galerie.arts-appliques.social-cooremans, .color-galerie .hashtags.economique-cooremans.pedagogique-bulls, .color-galerie.economique-cooremans.technique, .color-galerie.economique-cooremans.social-cooremans, .color-galerie.pedagogique-bulls.technique, .color-galerie.pedagogique-bulls.social-cooremans, .color-galerie.technique.social-cooremans {
     background-color: #CECECE; }
 
-.ct-events .color.arts-appliques {
+.ct-events.arts-appliques {
   background-color: #76B729; }
 
-.ct-events .color.economique-cooremans {
+.ct-events.economique-cooremans {
   background-color: #F49800; }
 
-.ct-events .color.paramedical {
+.ct-events.paramedical {
   background-color: #D21D10; }
 
-.ct-events .color.pedagogique-bulls {
+.ct-events.pedagogique-bulls {
   background-color: #1B97CE; }
 
-.ct-events .color.social-cooremans {
+.ct-events.social-cooremans {
   background-color: #F0E51A; }
 
-.ct-events .color.technique {
+.ct-events.technique {
   background-color: #5D0749; }
 
-.ct-events .color.paramedical.arts-appliques, .ct-events .color.paramedical.economique-cooremans, .ct-events .color.paramedical.pedagogique-bulls, .ct-events .color.paramedical.technique, .ct-events .color.paramedical.social-cooremans, .ct-events .color.arts-appliques.economique-cooremans, .ct-events .color.arts-appliques.pedagogique-bulls, .ct-events .color.arts-appliques.technique, .ct-events .color.arts-appliques.social-cooremans, .ct-events .color .hashtags.economique-cooremans.pedagogique-bulls, .ct-events .color.economique-cooremans.technique, .ct-events .color.economique-cooremans.social-cooremans, .ct-events .color.pedagogique-bulls.technique, .ct-events .color.pedagogique-bulls.social-cooremans, .ct-events .color.technique.social-cooremans {
+.ct-events.paramedical.arts-appliques, .ct-events.paramedical.economique-cooremans, .ct-events.paramedical.pedagogique-bulls, .ct-events.paramedical.technique, .ct-events.paramedical.social-cooremans, .ct-events.arts-appliques.economique-cooremans, .ct-events.arts-appliques.pedagogique-bulls, .ct-events.arts-appliques.technique, .ct-events.arts-appliques.social-cooremans, .ct-events .hashtags.economique-cooremans.pedagogique-bulls, .ct-events.economique-cooremans.technique, .ct-events.economique-cooremans.social-cooremans, .ct-events.pedagogique-bulls.technique, .ct-events.pedagogique-bulls.social-cooremans, .ct-events.technique.social-cooremans {
   background-color: #CECECE; }
 
 .hovereffect {
